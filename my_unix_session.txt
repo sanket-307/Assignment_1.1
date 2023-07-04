@@ -1,0 +1,834 @@
+
+Script started on Tue 04 Jul 2023 05:10:35 AM UTC
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ eci[Kho ""l"i"s"t" "t"h"e" "c"o"n"t"e"n"t"s" "o"f" "t"h"e" "c"u"r"r"e"n"t" "d"i"r"e"c"t"o"r"y"[C
+list the contents of the current directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;32mmy_unix_session.txt[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ eci[Kho ::[K[K""c"u"r"r"e"n"t" "w"r"k"[1P"[1P"o"r"k"i"n"g" "[1P" "d"d"i"[1P"[1P"i"r"e"c"t"o"r"y"
+current working directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ pws[Kd
+/home/vagrant
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""-"F" "o"p"t"i"o"n" "t"o" "c"l"a"s"s"i"f"y" "o"u"p"u"t"[C
+-F option to classify ouput
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -F
+[0m[01;32mmy_unix_session.txt[0m*  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo  [K""g"e"[1P"e"t"t"i"n"g" "h"e"l"p"[C
+getting help
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls --hleo[K[K[Klep[K[K[Kelp
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them.  E.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes.  See SIZE format below.
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information)
+                               with -l: show ctime and sort by name
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output.  WHEN defaults to 'always'
+                               or can be 'never' or 'auto'.  More info below
+  -d, --directory            list directory entries instead of contents,
+                               and do not dereference symbolic links
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files.
+                               augment with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l, print sizes in human readable format
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                             that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            use 1024-byte blocks
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of non graphic characters
+      --show-control-chars   show non graphic characters as-is (default
+                             unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size
+      --sort=WORD            sort by WORD instead of name: none -U,
+                             extension -X, size -S, time -t, version -v
+      --time=WORD            with -l, show time as WORD instead of modification
+                             time: atime -u, access -u, use -u, ctime -c,
+                             or status -c; use specified time as sort key
+                             if --sort=time
+      --time-style=STYLE     with -l, show times using style STYLE:
+                             full-iso, long-iso, iso, locale, +FORMAT.
+                             FORMAT is interpreted like 'date'; if FORMAT is
+                             FORMAT1<newline>FORMAT2, FORMAT1 applies to
+                             non-recent files and FORMAT2 to recent files;
+                             if STYLE is prefixed with 'posix-', STYLE
+                             takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time
+                               with -l: show access time and sort by name
+                               otherwise: sort by access time
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           assume screen width instead of current value
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any SELinux security context of each file
+  -1                         list one file per line
+      --help     display this help and exit
+      --version  output version information and exit
+
+SIZE is an integer and optional unit (example: 10M is 10*1024*1024).  Units
+are K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+Report ls bugs to bug-coreutils@gnu.org
+GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+General help using GNU software: <http://www.gnu.org/gethelp/>
+For complete documentation, run: info coreutils 'ls invocation'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ eci[Kgi[K[Kho ""g"e"t"t"i"n"g" "m"a"n"u"a"l"[C
+getting manual
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls [K[K[Kman ls
+[?1049h[?1h=LS(1)                                                                                          User Commands                                                                                          LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              scale sizes by SIZE before printing them.  E.g., '--block-size=M' prints sizes in units of 1,048,576 bytes.  See SIZE format below.[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+       [1m-c[0m     with [1m-lt[0m: sort by, and show, ctime (time of last modification of file status information) with [1m-l[0m: show ctime and sort by name otherwise: sort by ctime, newest first[m
+[m
+       [1m-C[0m     list entries by columns[m
+[m
+       [1m--color[0m[=[4mWHEN[24m][m
+              colorize the output.  WHEN defaults to 'always' or can be 'never' or 'auto'.  More info below[m
+[m
+       [1m-d[0m, [1m--directory[0m[m
+              list directory entries instead of contents, and do not dereference symbolic links[m
+[m
+       [1m-D[0m, [1m--dired[0m[m
+              generate output designed for Emacs' dired mode[m
+[m
+       [1m-f[0m     do not sort, enable [1m-aU[0m, disable [1m-ls[0m [1m--color[0m[m
+[m
+       [1m-F[0m, [1m--classify[0m[m
+              append indicator (one of */=>@|) to entries[m
+[m
+       [1m--file-type[0m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""a"d"d"i"t"i"o"n"a"l" "i"n"o"[1P"f"o"r"m"a"t"i"o"n"[C
+additional information
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -l
+total 20
+-rwxrwxr-x 1 vagrant vagrant 8193 Jul  4 05:29 [0m[01;32mmy_unix_session.txt[0m
+-rw-rw-r-- 1 vagrant vagrant 8192 Jul  4 05:29 typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""a"d"d"i"t"i"o"n"a"l" "i"n"f"o"r"m"a"t"i"o"n" "i"n" "h"u"m"a"n" "r"e"a"d"a"b"l"e" "[1P" "f"o"r"m"a"t"[C
+additional information in human readable format
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -l -h
+total 28K
+-rwxrwxr-x 1 vagrant vagrant 13K Jul  4 05:30 [0m[01;32mmy_unix_session.txt[0m
+-rw-rw-r-- 1 vagrant vagrant 12K Jul  4 05:30 typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""l"i"s"t" "t"h"e" "i"t"e"m"s" "i"n" "[1P"[1P"[1P"b"y" "l"a"s"t" "t"i"m"e" "[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"t"i"m"e" "o"f" "l"a"s"t" "c"h"a"n"g"e"
+list the items by time of last change
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -t [K
+[0m[01;32mmy_unix_session.txt[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ::[C[K[K""l"i"e"s"t" "t"h"e" "i"t"e"m"s" "i"n" "r"e"v"e"r"s"e" "o"r"d"e"r"[C
+liest the items in reverse order
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -r
+typescript  [0m[01;32mmy_unix_session.txt[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""t"o" "f"i"n"d" "m"o"s"t" "r"e"c"e"n"t" "e"d"i"t"s"[C
+to find most recent edits
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -rt
+typescript  [0m[01;32mmy_unix_session.txt[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ le[Ks -F Downloads
+ls: cannot access Downloads: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls -F Desktop
+ls: cannot access Desktop: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo don[K[K[K""d"o"n"[1P"w"n"l"o"a"d" "s"h"e"l"l"[1P"l" "l"e"s"s"o"n" "d"a"t"e"[1P"a"."z"i"p"[C
+download shell lesson data.zip
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+--2023-07-04 05:38:07--  https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+Resolving swcarpentry.github.io (swcarpentry.github.io)... 185.199.111.153, 185.199.108.153, 185.199.110.153, ...
+Connecting to swcarpentry.github.io (swcarpentry.github.io)|185.199.111.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 460289 (450K) [application/zip]
+Saving to: ‘shell-lesson-data.zip’
+
+ 0% [                                                                                                                                                                        ] 0           --.-K/s              69% [===================================================================================================================>                                                    ] 318,808     1.44MB/s             100%[=======================================================================================================================================================================>] 460,289     2.01MB/s   in 0.2s   
+
+2023-07-04 05:38:08 (2.01 MB/s) - ‘shell-lesson-data.zip’ saved [460289/460289]
+
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get install unzip
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 94%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Suggested packages:
+  zip
+The following NEW packages will be installed:
+  unzip
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 157 kB of archives.
+After this operation, 395 kB of additional disk space will be used.
+0% [Working]            0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]0% [Waiting for headers]                        Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB]
+                        0% [1 unzip 0 B/157 kB 0%]                          100% [Working]              Fetched 157 kB in 2s (55.5 kB/s)
+Selecting previously unselected package unzip.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63988 files and directories currently installed.)
+Preparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...
+Unpacking unzip (6.0-9ubuntu1.5) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Setting up unzip (6.0-9ubuntu1.5) ...
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;32mmy_unix_session.txt[0m  [01;31mshell-lesson-data.zip[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ unzip file.zip[K[K[K[K[K[K[K[K[K shell-lesson-data.zip 
+Archive:  shell-lesson-data.zip
+   creating: shell-lesson-data/
+   creating: shell-lesson-data/north-pacific-gyre/
+   creating: shell-lesson-data/exercise-data/
+   creating: shell-lesson-data/exercise-data/writing/
+  inflating: shell-lesson-data/exercise-data/writing/LittleWomen.txt  
+  inflating: shell-lesson-data/exercise-data/writing/haiku.txt  
+   creating: shell-lesson-data/exercise-data/creatures/
+  inflating: shell-lesson-data/exercise-data/creatures/basilisk.dat  
+  inflating: shell-lesson-data/exercise-data/creatures/unicorn.dat  
+  inflating: shell-lesson-data/exercise-data/creatures/minotaur.dat  
+   creating: shell-lesson-data/exercise-data/animal-counts/
+  inflating: shell-lesson-data/exercise-data/animal-counts/animals.csv  
+ extracting: shell-lesson-data/exercise-data/numbers.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01978B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02018B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01736A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01751A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02043B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02040B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01751B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02040Z.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01971Z.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01812A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01729A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02043A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01729B.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01843A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02040A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01978A.txt  
+  inflating: shell-lesson-data/north-pacific-gyre/goodiff.sh  
+  inflating: shell-lesson-data/north-pacific-gyre/goostats.sh  
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01843B.txt  
+   creating: shell-lesson-data/exercise-data/alkanes/
+  inflating: shell-lesson-data/exercise-data/alkanes/methane.pdb  
+  inflating: shell-lesson-data/exercise-data/alkanes/propane.pdb  
+  inflating: shell-lesson-data/exercise-data/alkanes/ethane.pdb  
+  inflating: shell-lesson-data/exercise-data/alkanes/pentane.pdb  
+  inflating: shell-lesson-data/exercise-data/alkanes/octane.pdb  
+  inflating: shell-lesson-data/exercise-data/alkanes/cubane.pdb  
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;32mmy_unix_session.txt[0m  [01;34mshell-lesson-data[0m  [01;31mshell-lesson-data.zip[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo :[K""l"o"o"k"s" "c"o"n"t"e"n"t" "b"y" "p"a"r"s"i"n"g"[1P"[1P"[1P"[1P"[1P"s"s"i"n" "d"i"r"e"c"t"o"r"y" "n"a"m"e"[C
+looks content by passin directory name
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls shell-lesson-data
+[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ echo ""c"h"a"n"g"e"[1P"[1P"[1P"[1P"[1P"[1P"c"a"[1P"h"a"n"g"e"s"[1P" "s"h"e"l"l"'"s" "c"u"r"r"e"n"t" "w"o"r"k"i"n"g" "d"i"r"e"c"t"o"r"y"[C
+change shell's current working directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd shell-lesson-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd execer[K[K[Krcise-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pws[Kd
+/home/vagrant/shell-lesson-data/exercise-data
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ls _F[K[K-F
+[0m[01;34malkanes[0m/  [01;34manimal-counts[0m/  [01;34mcreatures[0m/  numbers.txt  [01;34mwriting[0m/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""m"o"v"e" "t"o" "t"h"e" "c"u"r"r"e"n"t" "d"i"r"e"c"t"o"r"y" "p"a"r"e"n"t"[C
+move to the current directory parent
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ pwd
+/home/vagrant/shell-lesson-data
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ who [K[K[K[Kwho[K[K[Keco[Ko[Kho ""s"h"o"w" "a"l"l"[C
+show all
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls -F -a
+[0m[01;34m.[0m/  [01;34m..[0m/  [01;34mexercise-data[0m/  [01;34mnorth-pacific-gyre[0m/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""r"e"t"u"r"n" "t"o" "h"o"m"e" "d"i"r"e"c"t"o"r"y"[C
+return to home directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ pwd
+/home/vagrant
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ c [Kd s[Kshell-lesson-data/exercise-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pwed[K[Kd
+/home/vagrant/shell-lesson-data/exercise-data
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""~" "s"t"a"r"t" "f"r"o"m" "t"h"e" "c"u"r"r"e"n"t" "u"s"e"r" "h"o"m"e" "d"i"r"e"c"t"o"r"y"[C
+~ start from the current user home directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ce [K[K D[K[Kd ~/shell-lesson-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/v[Kcreatures/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ echo ""m"o"v"e" "t"o" "t"h"e" "p"r"e"v"i"o"u"s" "d"i"r"e"c"t"o"r"y"[C
+move to the previous directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ c [Kd -
+/home/vagrant/shell-lesson-data
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd creatures/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd -
+/home/vagrant/shell-lesson-data/exercise-data
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd -
+/home/vagrant/shell-lesson-data/exercise-data/creatures
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd dsh[K[K[Kshell-lesson-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""d"i"s"p"l"a"y" "t"h"e" "s"i"z"e" "o"f" "t"h"e" "f"i"l"e"s" "a"n"d" "d"i"r"e"[1P"[1P"[1P"r"e"c"[1P"[1P"[1P"i"r"e"c"t"o"r"i"e"s"[C
+display the size of the files and directories
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls - s [K[K[Ks exercise-data/
+total 20
+4 [0m[01;34malkanes[0m  4 [01;34manimal-counts[0m  4 [01;34mcreatures[0m  4 numbers.txt  4 [01;34mwriting[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls no[K[K[K[K[Kle[Ks north-pacific-gyre/
+goodiff.sh   NENE01729A.txt  NENE01736A.txt  NENE01751B.txt  NENE01843A.txt  NENE01971Z.txt  NENE01978B.txt  NENE02040A.txt  NENE02040Z.txt  NENE02043B.txt
+goostats.sh  NENE01729B.txt  NENE01751A.txt  NENE01812A.txt  NENE01843B.txt  NENE01978A.txt  NENE02018B.txt  NENE02040B.txt  NENE02043A.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo
+ls: cannot access north-pacific-gyre/goo: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo
+goodiff.sh   goostats.sh  
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo
+goodiff.sh   goostats.sh  
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd exercise-data/writing/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ecgi[K[Kgi[K[Kho ""c"r"e"[1P"[1P"r"e"a"t"e" "n"e"w" "d"i"r"e"c"t"o"r"y"[C
+create new directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mkdir thesis
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls -F
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis[0m/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""c"r"e"a"t"e" "n"e"s"t"e"d" "s"u"b"d"i"r"e"t"[1P"c"t"o"r"i"e"s"[C
+create nested subdirectories
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mkdir -p ..//[Kproject/data ../project/resutls[K[K[Klts
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls -FR ../porject[K[K[K[K[K[Kroe[Kject
+../project:
+[0m[01;34mdata[0m/  [01;34mresults[0m/
+
+../project/data:
+
+../project/results:
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ cd thesis/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ nano draft.txt
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: draft.txt                                                                                                                         [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[mtesting[49d(B[0;7mFile Name to Write: draft.txt                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3;8H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ ls
+draft.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ echo ""c"r"e"a"t"e" "b"l"a"n"k" "f"i"l"e"
+create blank file
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ touch myfile_file[C[C[C[C.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ ls -l
+total 4
+-rw-rw-r-- 1 vagrant vagrant 8 Jul  4 06:39 draft.txt
+-rw-rw-r-- 1 vagrant vagrant 0 Jul  4 06:41 my_file.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ rm my_file.txt 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesisvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ l[Kmv [K[K[Keco [K[Kho ""c"h"a"n"g" "t"[1P"[1P"[1P"e"[1P"g"e" "t"h"e" "f"i"l"e" "n"a"m"e"[C
+change the file name
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mv thesis/draft.txt thesis/quotes.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ l[Kls thesis
+quotes.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mv thesis/quotes.txt .
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  quotes.txt  [0m[01;34mthesis[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls thesis/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  quotes.txt  [0m[01;34mthesis[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""c"o"p"y"[C
+copy
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls [K[K[Kcp quotes.txt thesis/quore[K[Ktesx[K.text[K[K[Kxt[C[1P.txt[1P.txta.txtt.txti.txto.txtn.txts.txt[C[C[C[C
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls 
+haiku.txt  LittleWomen.txt  quotes.txt  [0m[01;34mthesis[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ s [K[Kls theis[K[Ksis
+quotations.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo [K[K[K[K[Kle[K[Ks[Kcp -r thei[Ksis thesis_backup
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ le thesis thesis_backpu[K[Kup
+The program 'le' is currently not installed. To run 'le' please ask your administrator to install the package 'le'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ le thesis thesis_backup[C[C[1P[1@s
+thesis:
+quotations.txt
+
+thesis_backup:
+quotations.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  quotes.txt  [0m[01;34mthesis[0m  [01;34mthesis_backup[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ rem[K[Km quoe[Ktes.txt [K
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis[0m  [01;34mthesis_backup[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""r"e"m"o"v"e" "t"i"[1P"[1P"w"i"t"h" "r"e"c"y"c"l"e"[1P"[1P"[1P"[1P"[1P"[1P"[1P"p"r"o"t"e"c"t"i"o"n" "a"s" "d"e"l"e"t"e"d" "f"i"l"e"s" "b"e"e"n" "r"e"c"y"c"l"e"d" "b"y" "[1P"[1P"[1P"t"o" "f"r"e"e" "u"p" "s"p"a"n"c"e" "a"n"[1P"[1P"[1P"[1P"[1P"[1P"c"e" "a"n"d" "[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"d"i"[1P"[1P" "i"[1P"d"i"s"k" "s"p"a"n"c"e" "a"n"[1P"[1P"[1P"[1P"[1P"[1P"c"e" "a"n"d" "n"o" "g"u"r"a"n"t"e"e" "t"o" "r"e"v"o"c"e"r"[1P"[1P"[1P"[1P"c"o"e"r" "u"s"i"n"g" "t"o"o"l"d"[1P"s"[C[1P[C[C[1@v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+remove with protection as deleted files been recycled to free up disk space and no gurantee to recover using tools
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ rem[K[Km -i thi[Kesis_backup/th[K[Kquotations.txt 
+rm: remove regular file ‘thesis_backup/quotations.txt’? n
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ;s
+bash: syntax error near unexpected token `;'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis[0m  [01;34mthesis_backup[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ re [K[Km -r thesis
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis_backup[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ exit
+Script done on Tue 04 Jul 2023 07:56:53 AM UTC
+Script started on Tue 04 Jul 2023 08:36:45 AM UTC
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd shell-lesson-data/exercise-data/alkanes/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ echo ""p"i"p"e"s" "a"n"d" "f"i"l"t"e"r"s"
+pipes and filters
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ echo word[K[K[K[K""w"o"r"d" "c"o"u"n"t"[C
+word count
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ l[Kwe ub[K[Kcubane.pdb 
+The program 'we' is currently not installed. To run 'we' please ask your administrator to install the package 'xwpe'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we cubane.pdb [C[C[1P[1@c
+  20  156 1158 cubane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ w [Kc -.[K[K*.pdb
+  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ eco[Kho o[K""o"n"l"y" "l"i"n"e" "c"o"u"n"t"[C
+only line count
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we -l -[K*.pdb
+The program 'we' is currently not installed. To run 'we' please ask your administrator to install the package 'xwpe'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we -l *.pdb[C[1P[1@c
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ echo ""w"o"r"d" "a"n"d" "c"h"a"r"a"c"t"o"r" "[1P"[1P"[1P"e"r" "c"o"u"n"t"[C
+word and character count
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we[Kc -m- [C[1P [C - w [C * . p d b 
+ 156 1158 cubane.pdb
+  84  622 ethane.pdb
+  57  422 methane.pdb
+ 246 1828 octane.pdb
+ 165 1226 pentane.pdb
+ 111  825 propane.pdb
+ 819 6081 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ echo ""c"a"p"t"[1P"t"u"r"e" "o"u"t"p"u"t"[C
+capture output
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ e[Kwe -l*. [1@ [C[C[C[Kpdb > length.txt
+The program 'we' is currently not installed. To run 'we' please ask your administrator to install the package 'xwpe'
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we -l *.pdb > length.txt[1P[1@c
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls length.txt 
+length.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cat length.txt 
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ eco [K[Kh [Ko ""s"o"r" "i"n" "[1P"[1P"[1P"[1P"t" "i"n" "n"u"m"b"[1P"e"r"i"c"a"l" "[1P" "o"r"d"e"r"[C
+sort in numerical order
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ sor [Kt -n length.txt 
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ sort -n length.txt ?[K> sorted_lenght.tx[K[K[K[K[K[K[Kngh[Kth.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ jead[K[K[K[Khae[K[Kead -n 1 D [1@C[1@C[C[C[1P [1P [1P [1P 5 [C s r [1P r [1P o r ted_length.txt 
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ head -n 5 sorted_length.txt [C[1@F[1P[C[1@F[C[C[1@F[C[C[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P n a n o [C m [1P m y [1P [1P [K[1P [1P [1P [1P c d [C [K[C . . 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;32mmy_unix_session.txt[0m  [01;34mshell-lesson-data[0m  [01;31mshell-lesson-data.zip[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ nano y[Kmy_unix_session.txt 
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                      File: my_unix_session.txt                                                                                                                  [4;1H(B[mScript started on Tue 04 Jul 2023 05:10:35 AM UTC[5d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ eci^H^[[Kho ""^Hl"^Hi"^Hs"^Ht"^H "^Ht"^Hh"^He"^H "^Hc"^Ho"^Hn"^Ht"^He"^Hn"^Ht"^Hs"^H "^Ho"^Hf"^H "^Ht"^Hh"^He"^H "^Hc"^Hu"^Hr"^Hr"$[6;1Hlist the contents of the current directory[7d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls[8d^[[0m^[[01;32mmy_unix_session.txt^[[0m  typescript[9d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ eci^H^[[Kho ::^H^[[K^H^[[K""^Hc"^Hu"^Hr"^Hr"^He"^Hn"^Ht"^H "^Hw"^Hr"^Hk"^H^H^[[1P"^H^H^[[1P"^Ho"^Hr"^Hk"^Hi"^Hn"^Hg"^H "^H^H^[[1P"$[10;1Hcurrent working directory[11d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ pws^H^[[Kd[12d/home/vagrant[13d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^H-"^HF"^H "^Ho"^Hp"^Ht"^Hi"^Ho"^Hn"^H "^Ht"^Ho"^H "^Hc"^Hl"^Ha"^Hs"^Hs"^Hi"^Hf"^Hy"^H "^Ho"^Hu"^Hp"^Hu"^Ht"^H^[[C[14d-F option to classify ouput[15d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -F[16d^[[0m^[[01;32mmy_unix_session.txt^[[0m*  typescript[17d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo  ^H^[[K""^Hg"^He"^H^H^[[1P"^He"^Ht"^Ht"^Hi"^Hn"^Hg"^H "^Hh"^He"^Hl"^Hp"^H^[[C[18dgetting help[19d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls --hleo^H^[[K^H^[[K^H^[[Klep^H^[[K^H^[[K^H^[[Kelp[20dUsage: ls [OPTION]... [FILE]...[21dList information about the FILEs (the current directory by default).[22dSort entries alphabetically if none of -cftuvSUX nor --sort is specified.[24dMandatory arguments to long options are mandatory for short options too.[25;3H-a, --all[25;30Hdo not ignore entries starting with .[26;3H-A, --almost-all[26;30Hdo not list implied . and ..[27;7H--author[27;30Hwith -l, print the author of each file[28;3H-b, --escape[28;30Hprint C-style escapes for nongraphic characters[29;7H--block-size=SIZE[30Gscale sizes by SIZE before printing them.  E.g.,[30;32H'--block-size=M' prints sizes in units of[31;32H1,048,576 bytes.  See SIZE format below.[32;3H-B, --ignore-backups[30Gdo not list implied entries ending with ~[33;3H-c[33;30Hwith -lt: sort by, and show, ctime (time of last[34;32Hmodification of file status information)[35;32Hwith -l: show ctime and sort by name[36;32Hotherwise: sort by ctime, newest first[37;3H-C[37;30Hlist entries by columns[38;7H--color[=WHEN][38;30Hcolorize the output.  WHEN defaults to 'always'[39;32Hor can be 'never' or 'auto'.  More info below[40;3H-d, --directory[40;30Hlist directory entries instead of contents,[41;32Hand do not dereference symbolic links[42;3H-D, --dired[42;30Hgenerate output designed for Emacs' dired mode[43;3H-f[43;30Hdo not sort, enable -aU, disable -ls --color[44;3H-F, --classify[44;30Happend indicator (one of */=>@|) to entries[45;7H--file-type[45;30Hlikewise, except do not append '*'[46;7H--format=WORD[46;30Hacross -x, commas -m, horizontal -x, long -l,[47;32Hsingle-column -1, verbose -l, vertical -C[48;7H--full-time[48;30Hlike -l --time-style=full-iso[49;96H(B[0;7m[ Read 482 lines ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[49d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;3H-g[25;30Hlike -l, but do not list owner[26;7H--group-directories-first[27dgroup directories before files.[28;32Haugment with a --sort option, but any[29;32Huse of --sort=none (-U) disables grouping[30;3H-G, --no-group[30;30Hin a long listing, don't print group names[31;3H-h, --human-readable[30Gwith -l, print sizes in human readable format[32;32H(e.g., 1K 234M 2G)[33;7H--si[33;30Hlikewise, but use powers of 1000 not 1024[34;3H-H, --dereference-command-line[35;30Hfollow symbolic links listed on the command line[36;7H--dereference-command-line-symlink-to-dir[37;30Hfollow each command line symbolic link[38;30Hthat points to a directory[39;7H--hide=PATTERN[39;30Hdo not list implied entries matching shell PATTERN[40;32H(overridden by -a or -A)[41;7H--indicator-style=WORD  append indicator with style WORD to entry names:[42;32Hnone (default), slash (-p),[43;32Hfile-type (--file-type), classify (-F)[44;3H-i, --inode[44;30Hprint the index number of each file[45;3H-I, --ignore=PATTERN[30Gdo not list implied entries matching shell PATTERN[46;3H-k, --kibibytes[46;30Huse 1024-byte blocks[47;3H-l[47;30Huse a long listing format[48;3H-L, --dereference[48;30Hwhen showing file information for a symbolic[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[2;49r8[49d[24S[1;51r[2;1H[K[25;32Hlink, show information for the file the link[26;32Hreferences rather than for the link itself[27;3H-m[27;30Hfill width with a comma separated list of entries[28;3H-n, --numeric-uid-gid[30Glike -l, but list numeric user and group IDs[29;3H-N, --literal[29;30Hprint raw entry names (don't treat e.g. control[30;32Hcharacters specially)[31;3H-o[31;30Hlike -l, but do not list group information[32;3H-p, --indicator-style=slash[33dappend / indicator to directories[34;3H-q, --hide-control-chars   print ? instead of non graphic characters[35;7H--show-control-chars   show non graphic characters as-is (default[36;30Hunless program is 'ls' and output is a terminal)[37;3H-Q, --quote-name[37;30Henclose entry names in double quotes[38;7H--quoting-style=WORD   use quoting style WORD for entry names:[39;32Hliteral, locale, shell, shell-always, c, escape[40;3H-r, --reverse[40;30Hreverse order while sorting[41;3H-R, --recursive[41;30Hlist subdirectories recursively[42;3H-s, --size[42;30Hprint the allocated size of each file, in blocks[43;3H-S[43;30Hsort by file size[44;7H--sort=WORD[44;30Hsort by WORD instead of name: none -U,[45;30Hextension -X, size -S, time -t, version -v[46;7H--time=WORD[46;30Hwith -l, show time as WORD instead of modification[47;30Htime: atime -u, access -u, use -u, ctime -c,[48;30Hor status -c; use specified time as sort key[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[1;200H(B[0;7mModified[39d(B[mb[39;32H literal, locale, shell, shell-always, c, escapeb[51;1H[?1049l[?1l>Use "fg" to return to nano.
+
+[1]+  Stopped                 nano my_unix_session.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ nano my_unix_session.txt 
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                      File: my_unix_session.txt                                                                                                                  [4;1H(B[mScript started on Tue 04 Jul 2023 05:10:35 AM UTC[5d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ eci^H^[[Kho ""^Hl"^Hi"^Hs"^Ht"^H "^Ht"^Hh"^He"^H "^Hc"^Ho"^Hn"^Ht"^He"^Hn"^Ht"^Hs"^H "^Ho"^Hf"^H "^Ht"^Hh"^He"^H "^Hc"^Hu"^Hr"^Hr"$[6;1Hlist the contents of the current directory[7d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls[8d^[[0m^[[01;32mmy_unix_session.txt^[[0m  typescript[9d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ eci^H^[[Kho ::^H^[[K^H^[[K""^Hc"^Hu"^Hr"^Hr"^He"^Hn"^Ht"^H "^Hw"^Hr"^Hk"^H^H^[[1P"^H^H^[[1P"^Ho"^Hr"^Hk"^Hi"^Hn"^Hg"^H "^H^H^[[1P"$[10;1Hcurrent working directory[11d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ pws^H^[[Kd[12d/home/vagrant[13d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^H-"^HF"^H "^Ho"^Hp"^Ht"^Hi"^Ho"^Hn"^H "^Ht"^Ho"^H "^Hc"^Hl"^Ha"^Hs"^Hs"^Hi"^Hf"^Hy"^H "^Ho"^Hu"^Hp"^Hu"^Ht"^H^[[C[14d-F option to classify ouput[15d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -F[16d^[[0m^[[01;32mmy_unix_session.txt^[[0m*  typescript[17d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo  ^H^[[K""^Hg"^He"^H^H^[[1P"^He"^Ht"^Ht"^Hi"^Hn"^Hg"^H "^Hh"^He"^Hl"^Hp"^H^[[C[18dgetting help[19d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls --hleo^H^[[K^H^[[K^H^[[Klep^H^[[K^H^[[K^H^[[Kelp[20dUsage: ls [OPTION]... [FILE]...[21dList information about the FILEs (the current directory by default).[22dSort entries alphabetically if none of -cftuvSUX nor --sort is specified.[24dMandatory arguments to long options are mandatory for short options too.[25;3H-a, --all[25;30Hdo not ignore entries starting with .[26;3H-A, --almost-all[26;30Hdo not list implied . and ..[27;7H--author[27;30Hwith -l, print the author of each file[28;3H-b, --escape[28;30Hprint C-style escapes for nongraphic characters[29;7H--block-size=SIZE[30Gscale sizes by SIZE before printing them.  E.g.,[30;32H'--block-size=M' prints sizes in units of[31;32H1,048,576 bytes.  See SIZE format below.[32;3H-B, --ignore-backups[30Gdo not list implied entries ending with ~[33;3H-c[33;30Hwith -lt: sort by, and show, ctime (time of last[34;32Hmodification of file status information)[35;32Hwith -l: show ctime and sort by name[36;32Hotherwise: sort by ctime, newest first[37;3H-C[37;30Hlist entries by columns[38;7H--color[=WHEN][38;30Hcolorize the output.  WHEN defaults to 'always'[39;32Hor can be 'never' or 'auto'.  More info below[40;3H-d, --directory[40;30Hlist directory entries instead of contents,[41;32Hand do not dereference symbolic links[42;3H-D, --dired[42;30Hgenerate output designed for Emacs' dired mode[43;3H-f[43;30Hdo not sort, enable -aU, disable -ls --color[44;3H-F, --classify[44;30Happend indicator (one of */=>@|) to entries[45;7H--file-type[45;30Hlikewise, except do not append '*'[46;7H--format=WORD[46;30Hacross -x, commas -m, horizontal -x, long -l,[47;32Hsingle-column -1, verbose -l, vertical -C[48;7H--full-time[48;30Hlike -l --time-style=full-iso[49;96H(B[0;7m[ Read 514 lines ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[4d[5d[6d[7d[8d[9d[10d[11d[12d[13d[14d[15d[16d[17d[18d[19d[20d[21d[22d[23d[24d[25d[26d[27d[28d[49d[K[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;3H-g[25;30Hlike -l, but do not list owner[26;7H--group-directories-first[27dgroup directories before files.[28;32Haugment with a --sort option, but any[29;32Huse of --sort=none (-U) disables grouping[30;3H-G, --no-group[30;30Hin a long listing, don't print group names[31;3H-h, --human-readable[30Gwith -l, print sizes in human readable format[32;32H(e.g., 1K 234M 2G)[33;7H--si[33;30Hlikewise, but use powers of 1000 not 1024[34;3H-H, --dereference-command-line[35;30Hfollow symbolic links listed on the command line[36;7H--dereference-command-line-symlink-to-dir[37;30Hfollow each command line symbolic link[38;30Hthat points to a directory[39;7H--hide=PATTERN[39;30Hdo not list implied entries matching shell PATTERN[40;32H(overridden by -a or -A)[41;7H--indicator-style=WORD  append indicator with style WORD to entry names:[42;32Hnone (default), slash (-p),[43;32Hfile-type (--file-type), classify (-F)[44;3H-i, --inode[44;30Hprint the index number of each file[45;3H-I, --ignore=PATTERN[30Gdo not list implied entries matching shell PATTERN[46;3H-k, --kibibytes[46;30Huse 1024-byte blocks[47;3H-l[47;30Huse a long listing format[48;3H-L, --dereference[48;30Hwhen showing file information for a symbolic[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[2;49r8[49d[24S[1;51r[2;1H[K[25;32Hlink, show information for the file the link[26;32Hreferences rather than for the link itself[27;3H-m[27;30Hfill width with a comma separated list of entries[28;3H-n, --numeric-uid-gid[30Glike -l, but list numeric user and group IDs[29;3H-N, --literal[29;30Hprint raw entry names (don't treat e.g. control[30;32Hcharacters specially)[31;3H-o[31;30Hlike -l, but do not list group information[32;3H-p, --indicator-style=slash[33dappend / indicator to directories[34;3H-q, --hide-control-chars   print ? instead of non graphic characters[35;7H--show-control-chars   show non graphic characters as-is (default[36;30Hunless program is 'ls' and output is a terminal)[37;3H-Q, --quote-name[37;30Henclose entry names in double quotes[38;7H--quoting-style=WORD   use quoting style WORD for entry names:[39;32Hliteral, locale, shell, shell-always, c, escape[40;3H-r, --reverse[40;30Hreverse order while sorting[41;3H-R, --recursive[41;30Hlist subdirectories recursively[42;3H-s, --size[42;30Hprint the allocated size of each file, in blocks[43;3H-S[43;30Hsort by file size[44;7H--sort=WORD[44;30Hsort by WORD instead of name: none -U,[45;30Hextension -X, size -S, time -t, version -v[46;7H--time=WORD[46;30Hwith -l, show time as WORD instead of modification[47;30Htime: atime -u, access -u, use -u, ctime -c,[48;30Hor status -c; use specified time as sort key[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;30Hif --sort=time[26;7H--time-style=STYLE     with -l, show times using style STYLE:[27;30Hfull-iso, long-iso, iso, locale, +FORMAT.[28;30HFORMAT is interpreted like 'date'; if FORMAT is[29;30HFORMAT1<newline>FORMAT2, FORMAT1 applies to[30;30Hnon-recent files and FORMAT2 to recent files;[31;30Hif STYLE is prefixed with 'posix-', STYLE[32;30Htakes effect only outside the POSIX locale[33;3H-t[33;30Hsort by modification time, newest first[34;3H-T, --tabsize=COLS[34;30Hassume tab stops at each COLS instead of 8[35;3H-u[35;30Hwith -lt: sort by, and show, access time[36;32Hwith -l: show access time and sort by name[37;32Hotherwise: sort by access time[38;3H-U[38;30Hdo not sort; list entries in directory order[39;3H-v[39;30Hnatural sort of (version) numbers within text[40;3H-w, --width=COLS[40;30Hassume screen width instead of current value[41;3H-x[41;30Hlist entries by lines instead of by columns[42;3H-X[42;30Hsort alphabetically by entry extension[43;3H-Z, --context[43;30Hprint any SELinux security context of each file[44;3H-1[44;30Hlist one file per line[45;7H--help     display this help and exit[46;7H--version  output version information and exit[48dSIZE is an integer and optional unit (example: 10M is 10*1024*1024).  Units[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[2;49r8[49d[24S[1;51r[2;1H[K[25dare K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).[27dUsing color to distinguish file types is disabled both by default and[28dwith --color=never.  With --color=auto, ls emits color codes only when[29dstandard output is connected to a terminal.  The LS_COLORS environment[30dvariable can change the settings.  Use the dircolors command to set it.[32dExit status:[33d 0  if OK,[34d 1  if minor problems (e.g., cannot access subdirectory),[35d 2  if serious trouble (e.g., cannot access command-line argument).[37dReport ls bugs to bug-coreutils@gnu.org[38dGNU coreutils home page: <http://www.gnu.org/software/coreutils/>[39dGeneral help using GNU software: <http://www.gnu.org/gethelp/>[40dFor complete documentation, run: info coreutils 'ls invocation'[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ eci^H^[[Kgi^H^[[K^H^[[Kho ""^Hg"^He"^Ht"^Ht"^Hi"^Hn"^Hg"^H "^Hm"^Ha"^Hn"^Hu"^Ha"^Hl"^H^[[C[42dgetting manual[43d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls ^H^[[K^H^[[K^H^[[K^Gman ls[44d^[[?1049h^[[?1h^[=^MLS(1)[44;116HUser Commands[209G$[45;1H^[[m[46d^[[1mNAME^[[0m^[[m[47;8Hls - list directory contents^[[m[48d^[[m[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[2;49r8[49d[24S[1;51r[25;1H^[[1mSYNOPSIS^[[0m^[[m[26;8H^[[1mls^[[0m [^[[4mOPTION^[[24m]... [^[[4mFILE^[[24m]...^[[m[27d^[[m[28d^[[1mDESCRIPTION^[[0m^[[m[29;8HList information about the FILEs (the current directory by default).  Sort entries alphabetically if none of ^[[1m-cftuvSUX^[[0m nor ^[[1m--sort^[[0m is specified.^[[m[30d^[[m[31;8HMandatory arguments to long options are mandatory for short options too.^[[m[32d^[[m[33;8H^[[1m-a^[[0m, ^[[1m--all^[[0m^[[m[34;15Hdo not ignore entries starting with .^[[m[35d^[[m[36;8H^[[1m-A^[[0m, ^[[1m--almost-all^[[0m^[[m[37;15Hdo not list implied . and ..^[[m[38d^[[m[39;8H^[[1m--author^[[0m^[[m[40;15Hwith ^[[1m-l^[[0m, print the author of each file^[[m[41d^[[m[42;8H^[[1m-b^[[0m, ^[[1m--escape^[[0m^[[m[43;15Hprint C-style escapes for nongraphic characters^[[m[44d^[[m[45;8H^[[1m--block-size^[[0m=^[[4mSIZE^[[24m^[[m[46;15Hscale sizes by SIZE before printing them.  E.g., '--block-size=M' prints sizes in units of 1,048,576 bytes.  See SIZE format below.^[[m[47d^[[m[48;8H^[[1m-B^[[0m, ^[[1m--ignore-backups^[[0m^[[m[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[2;49r8[49d[24S[1;51r[2;1H[K[25;15Hdo not list implied entries ending with ~^[[m[26d^[[m[27;8H^[[1m-c^[[0m     with ^[[1m-lt^[[0m: sort by, and show, ctime (time of last modification of file status information) with ^[[1m-l^[[0m: show ctime and sort by name otherwise: sort by ctime, newest firs$[28;1H^[[m[29;8H^[[1m-C^[[0m     list entries by columns^[[m[30d^[[m[31;8H^[[1m--color^[[0m[=^[[4mWHEN^[[24m]^[[m[32;15Hcolorize the output.  WHEN defaults to 'always' or can be 'never' or 'auto'.  More info below^[[m[33d^[[m[34;8H^[[1m-d^[[0m, ^[[1m--directory^[[0m^[[m[35;15Hlist directory entries instead of contents, and do not dereference symbolic links^[[m[36d^[[m[37;8H^[[1m-D^[[0m, ^[[1m--dired^[[0m^[[m[38;15Hgenerate output designed for Emacs' dired mode^[[m[39d^[[m[40;8H^[[1m-f^[[0m     do not sort, enable ^[[1m-aU^[[0m, disable ^[[1m-ls^[[0m ^[[1m--color^[[0m^[[m[41d^[[m[42;8H^[[1m-F^[[0m, ^[[1m--classify^[[0m^[[m[43;15Happend indicator (one of */=>@|) to entries^[[m[44d^[[m[45;8H^[[1m--file-type^[[0m^[[m[46d^[[7m Manual page ls(1) line 1 (press h for help or q to quit)^[[27m^[[K^M^[[K^[[?1l^[>^[[?1049l^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^Ha"^Hd"^Hd"^Hi"^Ht"^Hi"^Ho$[47;1Hadditional information[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -l[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1Htotal 20[26d-rwxrwxr-x 1 vagrant vagrant 8193 Jul  4 05:29 ^[[0m^[[01;32mmy_unix_session.txt^[[0m[27d-rw-rw-r-- 1 vagrant vagrant 8192 Jul  4 05:29 typescript[28d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^Ha"^Hd"^Hd"^Hi"^Ht"^Hi"^Ho"^Hn"^Ha"^Hl"^H "^Hi"^Hn"^Hf"^Ho"^Hr"^Hm"^Ha"^Ht"^Hi"^Ho"^Hn"^H "^Hi"^Hn"^H "^Hh"^Hu"^Hm"^Ha"^Hn$[29;1Hadditional information in human readable format[30d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -l -h[31dtotal 28K[32d-rwxrwxr-x 1 vagrant vagrant 13K Jul  4 05:30 ^[[0m^[[01;32mmy_unix_session.txt^[[0m[33d-rw-rw-r-- 1 vagrant vagrant 12K Jul  4 05:30 typescript[34d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^Hl"^Hi"^Hs"^Ht"^H "^Ht"^Hh"^He"^H "^Hi"^Ht"^He"^Hm"^Hs"^H "^Hi"^Hn"^H "^H^H^[[1P"^H^H^[[1P"^H^H^[[1P"^Hb"^Hy"^H "^Hl"^Ha"^$[35;1Hlist the items by time of last change[36d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -t ^H^[[K[37d^[[0m^[[01;32mmy_unix_session.txt^[[0m  typescript[38d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ::^H^[[C^H^[[K^H^[[K""^Hl"^Hi"^He"^Hs"^Ht"^H "^Ht"^Hh"^He"^H "^Hi"^Ht"^He"^Hm"^Hs"^H "^Hi"^Hn"^H "^Hr"^He"^Hv"^He"^Hr"^Hs"^He$[39;1Hliest the items in reverse order[40d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -r[41dtypescript  ^[[0m^[[01;32mmy_unix_session.txt^[[0m[42d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^Ht"^Ho"^H "^Hf"^Hi"^Hn"^Hd"^H "^Hm"^Ho"^Hs"^Ht"^H "^Hr"^He"^Hc"^He"^Hn"^Ht"^H "^He"^Hd"^Hi"^Ht"^Hs"^H^[[C[43dto find most recent edits[44d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -rt[45dtypescript  ^[[0m^[[01;32mmy_unix_session.txt^[[0m[46d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ le^H^[[Ks -F Downloads[47dls: cannot access Downloads: No such file or directory[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls -F Desktop[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1Hls: cannot access Desktop: No such file or directory[26d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo don^H^[[K^H^[[K^H^[[K""^Hd"^Ho"^Hn"^H^H^[[1P"^Hw"^Hn"^Hl"^Ho"^Ha"^Hd"^H "^Hs"^Hh"^He"^Hl"^Hl"^H^H^[[1P"^Hl"^H "^Hl"^He"^Hs"^H$[27;1Hdownload shell lesson data.zip[28d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip[29d--2023-07-04 05:38:07--  https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip[30dResolving swcarpentry.github.io (swcarpentry.github.io)... 185.199.111.153, 185.199.108.153, 185.199.110.153, ...[31dConnecting to swcarpentry.github.io (swcarpentry.github.io)|185.199.111.153|:443... connected.[32dHTTP request sent, awaiting response... 200 OK[33dLength: 460289 (450K) [application/zip][34dSaving to: ‘shell-lesson-data.zip’[36d^M 0% [[36;176H] 0[36;190H--.-K/s[209G$[38;1H2023-07-04 05:38:08 (2.01 MB/s) - ‘shell-lesson-data.zip’ saved [460289/460289][40d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get install unzip[41d^MReading package lists... 0%^M^MReading package lists... 100%^M^MReading package lists... Done^M[42d^MBuilding dependency tree... 0%^M^MBuilding dependency tree... 0%^M^MBuilding dependency tree... 50%^M^MBuilding dependency tree... 50%^M^MBuilding dependency tree... 94%^M^MBuilding dependency tree[207G^M[43d^MReading state information... 0%^M^MReading state information... 0%^M^MReading state information... Done^M[44dSuggested packages:[45;3Hzip[46dThe following NEW packages will be installed:[47;3Hunzip[48d0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1HNeed to get 157 kB of archives.[26dAfter this operation, 395 kB of additional disk space will be used.[27d^M^M0% [Working]^M[27;31H^M0% [Waiting for headers]^M0% [Waiting for headers]^M0% [Waiting for headers]^M0% [Waiting for headers]^M0% [Waiting for headers]^M[27;187H^MGet:1 http://archive$[28;1H^M[28;27H^M0% [1 unzip 0 B/157 kB 0%]^M[28;83H^M100% [Working]^M[28;115H^MFetched 157 kB in 2s (55.5 kB/s)[29dSelecting previously unselected package unzip.[30d(Reading database ... ^M(Reading database ... 5%^M(Reading database ... 10%^M(Reading database ... 15%^M(Reading database ... 20%^M(Reading database ... 25%^M(Reading database ... 30%^M(Reading database ... 3$[31;1HPreparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...[32dUnpacking unzip (6.0-9ubuntu1.5) ...[33dProcessing triggers for man-db (2.6.7.1-1ubuntu1) ...[34dProcessing triggers for mime-support (3.54ubuntu1.1) ...[35dSetting up unzip (6.0-9ubuntu1.5) ...[36d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls[37d^[[0m^[[01;32mmy_unix_session.txt^[[0m  ^[[01;31mshell-lesson-data.zip^[[0m  typescript[38d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ unzip file.zip^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K shell-lesson-data.zip[39dArchive:  shell-lesson-data.zip[40;4Hcreating: shell-lesson-data/[41;4Hcreating: shell-lesson-data/north-pacific-gyre/[42;4Hcreating: shell-lesson-data/exercise-data/[43;4Hcreating: shell-lesson-data/exercise-data/writing/[44;3Hinflating: shell-lesson-data/exercise-data/writing/LittleWomen.txt[45;3Hinflating: shell-lesson-data/exercise-data/writing/haiku.txt[46;4Hcreating: shell-lesson-data/exercise-data/creatures/[47;3Hinflating: shell-lesson-data/exercise-data/creatures/basilisk.dat[48;3Hinflating: shell-lesson-data/exercise-data/creatures/unicorn.dat[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;3Hinflating: shell-lesson-data/exercise-data/creatures/minotaur.dat[26;4Hcreating: shell-lesson-data/exercise-data/animal-counts/[27;3Hinflating: shell-lesson-data/exercise-data/animal-counts/animals.csv[28d extracting: shell-lesson-data/exercise-data/numbers.txt[29;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01978B.txt[30;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02018B.txt[31;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01736A.txt[32;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01751A.txt[33;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02043B.txt[34;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040B.txt[35;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01751B.txt[36;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040Z.txt[37;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01971Z.txt[38;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01812A.txt[39;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01729A.txt[40;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02043A.txt[41;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01729B.txt[42;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01843A.txt[43;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040A.txt[44;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01978A.txt[45;3Hinflating: shell-lesson-data/north-pacific-gyre/goodiff.sh[46;3Hinflating: shell-lesson-data/north-pacific-gyre/goostats.sh[47;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01843B.txt[48;4Hcreating: shell-lesson-data/exercise-data/alkanes/[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;3Hinflating: shell-lesson-data/exercise-data/alkanes/methane.pdb[26;3Hinflating: shell-lesson-data/exercise-data/alkanes/propane.pdb[27;3Hinflating: shell-lesson-data/exercise-data/alkanes/ethane.pdb[28;3Hinflating: shell-lesson-data/exercise-data/alkanes/pentane.pdb[29;3Hinflating: shell-lesson-data/exercise-data/alkanes/octane.pdb[30;3Hinflating: shell-lesson-data/exercise-data/alkanes/cubane.pdb[31d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls[32d^[[0m^[[01;32mmy_unix_session.txt^[[0m  ^[[01;34mshell-lesson-data^[[0m  ^[[01;31mshell-lesson-data.zip^[[0m  typescript[33d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo :^H^[[K""^Hl"^Ho"^Ho"^Hk"^Hs"^H "^Hc"^Ho"^Hn"^Ht"^He"^Hn"^Ht"^H "^Hb"^Hy"^H "^Hp"^Ha"^Hr"^Hs"^Hi"^Hn"^Hg"^H^H^[[1P"^H^H^[[1P"$[34;1Hlooks content by passin directory name[35d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ ls shel^Gl-lesson-data[36d^[[0m^[[01;34mexercise-data^[[0m  ^[[01;34mnorth-pacific-gyre^[[0m[37d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ echo ""^Hc"^Hh"^Ha"^Hn"^Hg"^He"^H^H^[[1P"^H^H^[[1P"^H^H^[[1P"^H^H^[[1P"^H^H^[[1P"^H^H^[[1P"^Hc"^Ha"^H^H^[[1P"^Hh"^Ha"^Hn"^Hg"^He"^$[38;1Hchange shell's current working directory[39d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ cd shell-lesson-data/[40d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd execer^G^H^[[K^G^H^[[K^H^[[Krcise-data/[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pws^H^[[Kd[42d/home/vagrant/shell-lesson-data/exercise-data[43d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ls _F^H^[[K^H^[[K-F[44d^[[0m^[[01;34malkanes^[[0m/  ^[[01;34manimal-counts^[[0m/  ^[[01;34mcreatures^[[0m/  numbers.txt  ^[[01;34mwriting^[[0m/[45d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""^Hm"^Ho"^Hv"^He"^H "^Ht"^Ho"^H "^Ht"^Hh"^He"^H "^Hc"^Hu"^Hr$[46;1Hmove to the current directory parent[47d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd ..[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ pwd[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1H/home/vagrant/shell-lesson-data[26d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ who ^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^G^G^Gwho^H^[[K^H^[[K^H^[[Keco^H^[[Ko^H^[[Kho ""^Hs"^Hh"^Ho"$[27;1Hshow all[28d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls -F -a[29d^[[0m^[[01;34m.^[[0m/  ^[[01;34m..^[[0m/  ^[[01;34mexercise-data^[[0m/  ^[[01;34mnorth-pacific-gyre^[[0m/[30d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""^Hr"^He"^Ht"^Hu"^Hr"^Hn"^H "^Ht"^Ho"^H "^Hh"^Ho"^Hm"^He"^H "^Hd"^Hi"^Hr"^He"^Hc"^Ht"^Ho$[31;1Hreturn to home directory[32d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd[33d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ pwd[34d/home/vagrant[35d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ c ^H^[[Kd s^H^[[Kshell-lesson-data/exercise-data/[36d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pwed^H^[[K^H^[[Kd[37d/home/vagrant/shell-lesson-data/exercise-data[38d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""^H~"^H "^Hs"^Ht"^Ha"^Hr"^Ht"^H "^Hf"^Hr"^Ho"^Hm"^H "^Ht"^Hh$[39;1H~ start from the current user home directory[40d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ce ^H^[[K^H^[[K D^H^[[K^H^[[Kd ~/shell-lesson-data/[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/v^G^H^[[Kcreatures/[42d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ echo ""^Hm"^Ho"^Hv"^He"^H "^Ht"^Ho"^H "^Ht"^Hh$[43;1Hmove to the previous directory[44d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ c ^H^[[Kd -[45d/home/vagrant/shell-lesson-data[46d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/[47d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd creatures/[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd -[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1H/home/vagrant/shell-lesson-data/exercise-data[26d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd -[27d/home/vagrant/shell-lesson-data/exercise-data/creatures[28d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd ..[29d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd[30d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~^Gvagrant@vagrant-ubuntu-trusty-64:~$ cd dsh^G^H^[[K^H^[[K^H^[[Kshell-lesson-data/[31d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""^Hd"^Hi"^Hs"^Hp"^Hl"^Ha"^Hy"^H "^Ht"^Hh"^He"^H "^Hs"^Hi"^Hz"^He"^H "^Ho"^Hf"^H "^Ht"^Hh$[32;1Hdisplay the size of the files and directories[33d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls - s ^H^[[K^H^[[K^H^[[Ks exercise-data/[34dtotal 20[35d4 ^[[0m^[[01;34malkanes^[[0m  4 ^[[01;34manimal-counts^[[0m  4 ^[[01;34mcreatures^[[0m  4 numbers.txt  4 ^[[01;34mwriting^[[0m[36d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls ^Gno^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^G^G^Gle^H^[[Ks north-pacific-gyre/[37dgoodiff.sh   NENE01729A.txt  NENE01736A.txt  NENE01751B.txt  NENE01843A.txt  NENE01971Z.txt  NENE01978B.txt  NENE02040A.txt  NENE02040Z.txt  NENE02043B.txt[38dgoostats.sh  NENE01729B.txt  NENE01751A.txt  NENE01812A.txt  NENE01843B.txt  NENE01978A.txt  NENE02018B.txt  NENE02040B.txt  NENE02043A.txt[39d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/g^Goo^G[40dls: cannot access north-pacific-gyre/goo: No such file or directory[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo^G[42dgoodiff.sh   goostats.sh[43d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo[44dgoodiff.sh   goostats.sh[45d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^$[46;1H^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[47dhaiku.txt  LittleWomen.txt[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ecgi^H^[[K^H^[[Kgi^H^[[K^H^[[Kho ""^Hc"^Hr"^He"^H^$[25;1H[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1Hcreate new directory[26d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mkdir thesis[27d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls -F[28dhaiku.txt  LittleWomen.txt  ^[[0m^[[01;34mthesis^[[0m/[29d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""^Hc"^Hr"^He"^Ha"^Ht"^He"^H "^Hn"^He"^Hs"^Ht$[30;1Hcreate nested subdirectories[31d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mkdir -p ..//^H^[[Kproject/data ../project/resutls$[32;1H^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls -FR ../porject^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^$[33;1H../project:[34d^[[0m^[[01;34mdata^[[0m/  ^[[01;34mresults^[[0m/[36d../project/data:[38d../project/results:[39d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[40dhaiku.txt  LittleWomen.txt  ^[[0m^[[01;34mthesis^[[0m[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ cd thesis/[42d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ nano draft.txt[43d^[[?1049h^[[1;51r^[(B^[[m^[[4l^[[?7h^[[?12l^[[?25h^[[?1h^[=^[[?1h^[=^[[?1h^[=^[[39;49m^[[39;49m^[(B^[[m^[[H^[[2J^[(B^[[0;7m  GNU nano 2.2.6[43;197HFile: draft.$[44;1Hdraft.txt[45d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ echo ""^Hc"^Hr"^He"^Ha"^Ht"^He"^H "^$[46;1Hcreate blank file[47d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ touch myfile^H^H^H^H_file^H^H^H^H^[[$[48;1H^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ ls -l[25d[26d[27d[28d[29d[30d[31d[32d[33d[34d[35d[36d[37d[38d[39d[40d[41d[42d[43d[44d[45d[46d[47d[48d7[3;49r8[49d[24S[1;51r[25;1Htotal 4[26d-rw-rw-r-- 1 vagrant vagrant 8 Jul  4 06:39 draft.txt[27d-rw-rw-r-- 1 vagrant vagrant 0 Jul  4 06:41 my_file.txt[28d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ rm my_file.txt[29d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing/thesis^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing/thesis$ cd ..[30d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ l^H^[[Kmv ^H^[[K^H^[[K^H^[[Keco ^H^[[K^H^[[Kho ""^$[31;1Hchange the file name[32d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mv thesis/draft.txt thesis/quotes.txt[33d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[34dhaiku.txt  LittleWomen.txt  ^[[0m^[[01;34mthesis^[[0m[35d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ l^H^[[Kls thesis[36dquotes.txt[37d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ mv thesis/quotes.txt .[38d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[39dhaiku.txt  LittleWomen.txt  quotes.txt  ^[[0m^[[01;34mthesis^[[0m[40d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls thesis/[41d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[42dhaiku.txt  LittleWomen.txt  quotes.txt  ^[[0m^[[01;34mthesis^[[0m[43d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""^Hc"^Ho"^Hp"^Hy"^H^[[C[44dcopy[45d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls ^H^[[K^H^[[K^H^[[Kcp quotes.txt thesis/quore^H^$[46;1H^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[47dhaiku.txt  LittleWomen.txt  quotes.txt  ^[[0m^[[01;34mthesis^[[0m[48d^[]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing^Gvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ s ^H^[[K^H^[[Kls theis^H^[[K^H^[[Ksis[25d[26d[27d[28d[29d[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ vim 
+.bash_history          .bashrc                my_unix_session.txt    shell-lesson-data/     .ssh/                  
+.bash_logout           .cache/                .profile               shell-lesson-data.zip  typescript             
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ vim my_unix_session.txt 
+[?1049h[?1h=[2;1H▽[6n[1;1H  [1;1H[1;51r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[51;1H"my_unix_session.txt" [noeol] 518L, 89467C[>c[2;1HScript started on Tue 04 Jul 2023 05:10:35 AM UTC
+[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ eci[34m^H^[[m[Kho ""[34m^H[ml"[34m^H[mi"[34m^H[ms"[34m^H[mt"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[mc"[34m^H[mo"[34m^H[mn"[34m^H[mt"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[ms"[34m^H[m "[34m^H[mo"[34m^H[mf"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[mc"[34m^H[mu"[34m^H[mr"[34m^H[mr"[34m^^[4;1HH[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H^[[m[C[34m^M[m
+list the contents of the current directory[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls[34m^M
+^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m  typescript[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ eci[34m^H^[[m[Kho ::[34m^H^[[m[K[34m^H^[[m[K""[34m^H[mc"[34m^H[mu"[34m^H[mr"[34m^H[mr"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[mw"[34m^H[mr"[34m^H[mk"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mo"[34m^H[mr"[34m^H[mk"[34m^H[mi"[34m^H[mn"[34m^H[mg"[34m^H[m "[34m^H^H^[[m[1P"[34m^^[9;1HH[m "[34m^H[md"[34m^H[md"[34m^H[mi"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H^M[m
+current working directory[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ pws[34m^H^[[m[Kd[34m^M[m
+/home/vagrant[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[m-"[34m^H[mF"[34m^H[m "[34m^H[mo"[34m^H[mp"[34m^H[mt"[34m^H[mi"[34m^H[mo"[34m^H[mn"[34m^H[m "[34m^H[mt"[34m^H[mo"[34m^H[m "[34m^H[mc"[34m^H[ml"[34m^H[ma"[34m^H[ms"[34m^H[ms"[34m^H[mi"[34m^H[mf"[34m^H[my"[34m^H[m "[34m^H[mo"[34m^H[mu"[34m^H[mp"[34m^H[mu"[34m^H[mt"[34m^H^[[m[C[34m^M[m
+-F option to classify ouput[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -F[34m^M
+^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m*  typescript[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo  [34m^H^[[m[K""[34m^H[mg"[34m^H[me"[34m^H^H^[[m[1P"[34m^H[me"[34m^H[mt"[34m^H[mt"[34m^H[mi"[34m^H[mn"[34m^H[mg"[34m^H[m "[34m^H[mh"[34m^H[me"[34m^H[ml"[34m^H[mp"[34m^H^[[m[C[34m^M[m
+getting help[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls --hleo[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Klep[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Kelp[34m^M[m
+Usage: ls [OPTION]... [FILE]...[34m^M[m
+List information about the FILEs (the current directory by default).[34m^M[m
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.[34m^M
+^M[m
+Mandatory arguments to long options are mandatory for short options too.[34m^M[m
+  -a, --all[18Cdo not ignore entries starting with .[34m^M[m
+  -A, --almost-all[11Cdo not list implied . and ..[34m^M[m[27;7H--author[15Cwith -l, print the author of each file[34m^M[m
+  -b, --escape[15Cprint C-style escapes for nongraphic characters[34m^M[m[29;7H--block-size=SIZE      scale sizes by SIZE before printing them.  E.g.,[34m^M[m[30;32H'--block-size=M' prints sizes in units of[34m^M[m[31;32H1,048,576 bytes.  See SIZE format below.[34m^M[m
+  -B, --ignore-backups[7Cdo not list implied entries ending with ~[34m^M[m
+  -c[25Cwith -lt: sort by, and show, ctime (time of last[34m^M[m[34;32Hmodification of file status information)[34m^M[m[35;32Hwith -l: show ctime and sort by name[34m^M[m[36;32Hotherwise: sort by ctime, newest first[34m^M[m
+  -C[25Clist entries by columns[34m^M[m[38;7H--color[=WHEN][9Ccolorize the output.  WHEN defaults to 'always'[34m^M[m[39;32Hor can be 'never' or 'auto'.  More info below[34m^M[m
+  -d, --directory[12Clist directory entries instead of contents,[34m^M[m[41;32Hand do not dereference symbolic links[34m^M[m
+  -D, --dired[16Cgenerate output designed for Emacs' dired mode[34m^M[m
+  -f[25Cdo not sort, enable -aU, disable -ls --color[34m^M[m
+  -F, --classify[13Cappend indicator (one of */=>@|) to entries[34m^M[m[45;7H--file-type[12Clikewise, except do not append '*'[34m^M[m[46;7H--format=WORD[10Cacross -x, commas -m, horizontal -x, long -l,[34m^M[m[47;32Hsingle-column -1, verbose -l, vertical -C[34m^M[m[48;7H--full-time[12Clike -l --time-style=full-iso[34m^M[m
+  -g[25Clike -l, but do not list owner[34m^M[m[50;7H--group-directories-first[34m^M[m[51;192H1,0-1[9CTop[1;1H[?12l[?25h[?25l[51;192H2,1  [2;1H[?12l[?25h[?25l[51;192H3[3;1H[?12l[?25h[?25l[51;192H4[5;1H[?12l[?25h[?25l[51;192H5[6;1H[?12l[?25h[?25l[51;192H6[7;1H[?12l[?25h[?25l[51;192H7[8;1H[?12l[?25h[?25l[51;192H8[10;1H[?12l[?25h[?25l[51;192H9[11;1H[?12l[?25h[?25l[51;192H10,1[12;1H[?12l[?25h[?25l[51;193H1[13;1H[?12l[?25h[?25l[51;193H2[14;1H[?12l[?25h[?25l[51;193H3[15;1H[?12l[?25h[?25l[51;193H4[16;1H[?12l[?25h[?25l[51;193H5[17;1H[?12l[?25h[?25l[51;193H6[18;1H[?12l[?25h[?25l[51;193H7[19;1H[?12l[?25h[?25l[51;193H8[20;1H[?12l[?25h[?25l[51;193H9[21;1H[?12l[?25h[?25l[51;192H20[22;1H[?12l[?25h[?25l[51;193H1[23;1H[?12l[?25h[?25l[51;193H2[24;1H[?12l[?25h[?25l[51;193H3[25;1H[?12l[?25h[?25l[51;193H4[26;1H[?12l[?25h[?25l[51;193H5[27;1H[?12l[?25h[?25l[51;193H6[28;1H[?12l[?25h[?25l[51;193H7[29;1H[?12l[?25h[?25l[51;193H8[30;1H[?12l[?25h[?25l[51;193H9[31;1H[?12l[?25h[?25l[51;192H30[32;1H[?12l[?25h[?25l[51;193H1[33;1H[?12l[?25h[?25l[51;193H2[34;1H[?12l[?25h[?25l[51;193H3[35;1H[?12l[?25h[?25l[51;193H4[36;1H[?12l[?25h[?25l[51;193H5[37;1H[?12l[?25h[?25l[51;193H6[38;1H[?12l[?25h[?25l[51;193H7[39;1H[?12l[?25h[?25l[51;193H8[40;1H[?12l[?25h[?25l[51;193H9[41;1H[?12l[?25h[?25l[51;192H40[42;1H[?12l[?25h[?25l[51;193H1[43;1H[?12l[?25h[?25l[51;193H2[44;1H[?12l[?25h[?25l[51;193H3[45;1H[?12l[?25h[?25l[51;193H4[46;1H[?12l[?25h[?25l[51;193H5[47;1H[?12l[?25h[?25l[51;193H6[48;1H[?12l[?25h[?25l[51;193H7[49;1H[?12l[?25h[?25l[51;193H8[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hgroup directories before files.[34m^M[m[51;1H[K[51;192H49,1[11C0%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Haugment with a --sort option, but any[34m^M[m[51;192H[K[51;192H50,1[11C0%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;32Huse of --sort=none (-U) disables grouping[34m^M[m
+  -G, --no-group[13Cin a long listing, don't print group names[34m^M[m[51;192H[K[51;192H51,1[11C0%[49;1H[?12l[?25h[?25l[51;193H2[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-h, --human-readable[7Cwith -l, print sizes in human readable format[34m^M[m[51;192H[K[51;192H53,1[11C0%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32H(e.g., 1K 234M 2G)[34m^M[m[51;192H[K[51;192H54,1[11C1%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--si[19Clikewise, but use powers of 1000 not 1024[34m^M[m[51;192H[K[51;192H55,1[11C1%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;3H-H, --dereference-command-line[34m^M[m[50;30Hfollow symbolic links listed on the command line[34m^M[m[51;192H[K[51;192H56,1[11C1%[49;1H[?12l[?25h[?25l[51;193H7[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--dereference-command-line-symlink-to-dir[34m^M[m[51;192H[K[51;192H58,1[11C1%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hfollow each command line symbolic link[34m^M[m[51;192H[K[51;192H59,1[11C1%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hthat points to a directory[34m^M[m[51;192H[K[51;192H60,1[11C2%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--hide=PATTERN[9Cdo not list implied entries matching shell PATTERN[34m^M[m[51;192H[K[51;192H61,1[11C2%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32H(overridden by -a or -A)[34m^M[m[51;192H[K[51;192H62,1[11C2%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--indicator-style=WORD  append indicator with style WORD to entry names:[34m^M[m[51;192H[K[51;192H63,1[11C2%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hnone (default), slash (-p),[34m^M[m[51;192H[K[51;192H64,1[11C2%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hfile-type (--file-type), classify (-F)[34m^M[m[51;192H[K[51;192H65,1[11C3%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-i, --inode[16Cprint the index number of each file[34m^M[m[51;192H[K[51;192H66,1[11C3%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-I, --ignore=PATTERN[7Cdo not list implied entries matching shell PATTERN[34m^M[m[51;192H[K[51;192H67,1[11C3%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-k, --kibibytes[12Cuse 1024-byte blocks[34m^M[m[51;192H[K[51;192H68,1[11C3%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-l[25Cuse a long listing format[34m^M[m[51;192H[K[51;192H69,1[11C4%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-L, --dereference[10Cwhen showing file information for a symbolic[34m^M[m[51;192H[K[51;192H70,1[11C4%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hlink, show information for the file the link[34m^M[m[51;192H[K[51;192H71,1[11C4%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hreferences rather than for the link itself[34m^M[m[51;192H[K[51;192H72,1[11C4%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-m[25Cfill width with a comma separated list of entries[34m^M[m[51;192H[K[51;192H73,1[11C4%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-n, --numeric-uid-gid      like -l, but list numeric user and group IDs[34m^M[m[51;192H[K[51;192H74,1[11C5%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-N, --literal[14Cprint raw entry names (don't treat e.g. control[34m^M[m[51;192H[K[51;192H75,1[11C5%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hcharacters specially)[34m^M[m[51;192H[K[51;192H76,1[11C5%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-o[25Clike -l, but do not list group information[34m^M[m[51;192H[K[51;192H77,1[11C5%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-p, --indicator-style=slash[34m^M[m[51;192H[K[51;192H78,1[11C5%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Happend / indicator to directories[34m^M[m[51;192H[K[51;192H79,1[11C6%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-q, --hide-control-chars   print ? instead of non graphic characters[34m^M[m[51;192H[K[51;192H80,1[11C6%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--show-control-chars   show non graphic characters as-is (default[34m^M[m[51;192H[K[51;192H81,1[11C6%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hunless program is 'ls' and output is a terminal)[34m^M[m[51;192H[K[51;192H82,1[11C6%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-Q, --quote-name[11Cenclose entry names in double quotes[34m^M[m[51;192H[K[51;192H83,1[11C7%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--quoting-style=WORD   use quoting style WORD for entry names:[34m^M[m[51;192H[K[51;192H84,1[11C7%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hliteral, locale, shell, shell-always, c, escape[34m^M[m[51;192H[K[51;192H85,1[11C7%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-r, --reverse[14Creverse order while sorting[34m^M[m[51;192H[K[51;192H86,1[11C7%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-R, --recursive[12Clist subdirectories recursively[34m^M[m[51;192H[K[51;192H87,1[11C7%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-s, --size[17Cprint the allocated size of each file, in blocks[34m^M[m[51;192H[K[51;192H88,1[11C8%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-S[25Csort by file size[34m^M[m[51;192H[K[51;192H89,1[11C8%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--sort=WORD[12Csort by WORD instead of name: none -U,[34m^M[m[51;192H[K[51;192H90,1[11C8%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hextension -X, size -S, time -t, version -v[34m^M[m[51;192H[K[51;192H91,1[11C8%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--time=WORD[12Cwith -l, show time as WORD instead of modification[34m^M[m[51;192H[K[51;192H92,1[11C8%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Htime: atime -u, access -u, use -u, ctime -c,[34m^M[m[51;192H[K[51;192H93,1[11C9%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hor status -c; use specified time as sort key[34m^M[m[51;192H[K[51;192H94,1[11C9%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hif --sort=time[34m^M[m[51;192H[K[51;192H95,1[11C9%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--time-style=STYLE     with -l, show times using style STYLE:[34m^M[m[51;192H[K[51;192H96,1[11C9%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hfull-iso, long-iso, iso, locale, +FORMAT.[34m^M[m[51;192H[K[51;192H97,1[10C10%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30HFORMAT is interpreted like 'date'; if FORMAT is[34m^M[m[51;192H[K[51;192H98,1[10C10%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30HFORMAT1<newline>FORMAT2, FORMAT1 applies to[34m^M[m[51;192H[K[51;192H99,1[10C10%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hnon-recent files and FORMAT2 to recent files;[34m^M[m[51;192H[K[51;192H100,1[9C10%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Hif STYLE is prefixed with 'posix-', STYLE[34m^M[m[51;192H[K[51;192H101,1[9C10%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;30Htakes effect only outside the POSIX locale[34m^M[m[51;192H[K[51;192H102,1[9C11%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-t[25Csort by modification time, newest first[34m^M[m[51;192H[K[51;192H103,1[9C11%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-T, --tabsize=COLS[9Cassume tab stops at each COLS instead of 8[34m^M[m[51;192H[K[51;192H104,1[9C11%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-u[25Cwith -lt: sort by, and show, access time[34m^M[m[51;192H[K[51;192H105,1[9C11%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hwith -l: show access time and sort by name[34m^M[m[51;192H[K[51;192H106,1[9C11%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;32Hotherwise: sort by access time[34m^M[m[51;192H[K[51;192H107,1[9C12%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-U[25Cdo not sort; list entries in directory order[34m^M[m[51;192H[K[51;192H108,1[9C12%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-v[25Cnatural sort of (version) numbers within text[34m^M[m[51;192H[K[51;192H109,1[9C12%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-w, --width=COLS[11Cassume screen width instead of current value[34m^M[m[51;192H[K[51;192H110,1[9C12%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-x[25Clist entries by lines instead of by columns[34m^M[m[51;192H[K[51;192H111,1[9C13%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-X[25Csort alphabetically by entry extension[34m^M[m[51;192H[K[51;192H112,1[9C13%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-Z, --context[14Cprint any SELinux security context of each file[34m^M[m[51;192H[K[51;192H113,1[9C13%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3H-1[25Clist one file per line[34m^M[m[51;192H[K[51;192H114,1[9C13%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--help     display this help and exit[34m^M[m[51;192H[K[51;192H115,1[9C13%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;7H--version  output version information and exit[34m^M[m[51;192H[K[51;192H116,1[9C14%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H117,1[9C14%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HSIZE is an integer and optional unit (example: 10M is 10*1024*1024).  Units[34m^M[m[51;192H[K[51;192H118,1[9C14%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hare K, M, G, T, P, E, Z, Y (powers of 1024) or KB, MB, ... (powers of 1000).[34m^M[m[51;192H[K[51;192H119,1[9C14%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H120,1[9C14%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HUsing color to distinguish file types is disabled both by default and[34m^M[m[51;192H[K[51;192H121,1[9C15%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hwith --color=never.  With --color=auto, ls emits color codes only when[34m^M[m[51;192H[K[51;192H122,1[9C15%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hstandard output is connected to a terminal.  The LS_COLORS environment[34m^M[m[51;192H[K[51;192H123,1[9C15%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hvariable can change the settings.  Use the dircolors command to set it.[34m^M[m[51;192H[K[51;192H124,1[9C15%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H125,1[9C16%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HExit status:[34m^M[m[51;192H[K[51;192H126,1[9C16%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;2H0  if OK,[34m^M[m[51;192H[K[51;192H127,1[9C16%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;2H1  if minor problems (e.g., cannot access subdirectory),[34m^M[m[51;192H[K[51;192H128,1[9C16%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;2H2  if serious trouble (e.g., cannot access command-line argument).[34m^M[m[51;192H[K[51;192H129,1[9C16%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H130,1[9C17%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HReport ls bugs to bug-coreutils@gnu.org[34m^M[m[51;192H[K[51;192H131,1[9C17%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HGNU coreutils home page: <http://www.gnu.org/software/coreutils/>[34m^M[m[51;192H[K[51;192H132,1[9C17%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HGeneral help using GNU software: <http://www.gnu.org/gethelp/>[34m^M[m[51;192H[K[51;192H133,1[9C17%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HFor complete documentation, run: info coreutils 'ls invocation'[34m^M[m[51;192H[K[51;192H134,1[9C17%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ eci[34m^H^[[m[Kgi[34m^H^[[m[K[34m^H^[[m[Kho ""[34m^H[mg"[34m^H[me"[34m^H[mt"[34m^H[mt"[34m^H[mi"[34m^H[mn"[34m^H[mg"[34m^H[m "[34m^H[mm"[34m^H[ma"[34m^H[mn"[34m^H[mu"[34m^H[ma"[34m^H[ml"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H135,1[9C18%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hgetting manual[34m^M[m[51;192H[K[51;192H136,1[9C18%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls [34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^G[mman ls[34m^M[m[51;192H[K[51;192H137,1[9C18%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m[?1049h[34m^[[m[?1h[34m^[[m=[34m^M[mLS(1)[90CUser Commands[80C  [50;1H [8CLS(1)[34m^[[m[m[34m^M[m[51;192H[K[51;192H138,1[9C18%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H139,1[9C19%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[1mNAME[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H140,1[9C19%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8Hls - list directory contents[34m^[[m[m[34m^M[m[51;192H[K[51;192H141,1[9C19%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H142,1[9C19%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[1mSYNOPSIS[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H143,1[9C20%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1mls[34m^[[m[0m [[34m^[[m[4mOPTION[34m^[[m[24m]... [[34m^[[m[4mFILE[34m^[[m[24m]...[34m^[[m[m[34m^M[m[51;192H[K[51;192H144,1[9C20%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H145,1[9C20%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[1mDESCRIPTION[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H146,1[9C20%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8HList information about the FILEs (the current directory by default).  Sort entries alphabetically if none of [34m^[[m[1m-cftuvSUX[34m^[[m[0m nor [34m^[[m[1m--sort[34m^[[m[0m is specified.[34m^[[m[m[34m^M[m[51;192H[K[51;192H147,1[9C20%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H148,1[9C21%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8HMandatory arguments to long options are mandatory for short options too.[34m^[[m[m[34m^M[m[51;192H[K[51;192H149,1[9C21%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H150,1[9C21%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-a[34m^[[m[0m, [34m^[[m[1m--all[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H151,1[9C21%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hdo not ignore entries starting with .[34m^[[m[m[34m^M[m[51;192H[K[51;192H152,1[9C21%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H153,1[9C22%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-A[34m^[[m[0m, [34m^[[m[1m--almost-all[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H154,1[9C22%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hdo not list implied . and ..[34m^[[m[m[34m^M[m[51;192H[K[51;192H155,1[9C22%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H156,1[9C22%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m--author[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H157,1[9C23%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hwith [34m^[[m[1m-l[34m^[[m[0m, print the author of each file[34m^[[m[m[34m^M[m[51;192H[K[51;192H158,1[9C23%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H159,1[9C23%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-b[34m^[[m[0m, [34m^[[m[1m--escape[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H160,1[9C23%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hprint C-style escapes for nongraphic characters[34m^[[m[m[34m^M[m[51;192H[K[51;192H161,1[9C23%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H162,1[9C24%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m--block-size[34m^[[m[0m=[34m^[[m[4mSIZE[34m^[[m[24m[34m^[[m[m[34m^M[m[51;192H[K[51;192H163,1[9C24%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hscale sizes by SIZE before printing them.  E.g., '--block-size=M' prints sizes in units of 1,048,576 bytes.  See SIZE format below.[34m^[[m[m[34m^M[m[51;192H[K[51;192H164,1[9C24%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H165,1[9C24%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-B[34m^[[m[0m, [34m^[[m[1m--ignore-backups[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H166,1[9C24%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hdo not list implied entries ending with ~[34m^[[m[m[34m^M[m[51;192H[K[51;192H167,1[9C25%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H168,1[9C25%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;8H[34m^[[m[1m-c[34m^[[m[0m     with [34m^[[m[1m-lt[34m^[[m[0m: sort by, and show, ctime (time of last modification of file status information) with [34m^[[m[1m-l[34m^[[m[0m: show ctime and sort by name otherwise: sort by ctime, newest firstt[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H169,1[9C25%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H170,1[9C25%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-C[34m^[[m[0m     list entries by columns[34m^[[m[m[34m^M[m[51;192H[K[51;192H171,1[9C26%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H172,1[9C26%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m--color[34m^[[m[0m[=[34m^[[m[4mWHEN[34m^[[m[24m][34m^[[m[m[34m^M[m[51;192H[K[51;192H173,1[9C26%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hcolorize the output.  WHEN defaults to 'always' or can be 'never' or 'auto'.  More info below[34m^[[m[m[34m^M[m[51;192H[K[51;192H174,1[9C26%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H175,1[9C27%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-d[34m^[[m[0m, [34m^[[m[1m--directory[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H176,1[9C27%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hlist directory entries instead of contents, and do not dereference symbolic links[34m^[[m[m[34m^M[m[51;192H[K[51;192H177,1[9C27%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H178,1[9C27%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-D[34m^[[m[0m, [34m^[[m[1m--dired[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H179,1[9C27%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Hgenerate output designed for Emacs' dired mode[34m^[[m[m[34m^M[m[51;192H[K[51;192H180,1[9C28%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H181,1[9C28%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-f[34m^[[m[0m     do not sort, enable [34m^[[m[1m-aU[34m^[[m[0m, disable [34m^[[m[1m-ls[34m^[[m[0m [34m^[[m[1m--color[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H182,1[9C28%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[m[34m^M[m[51;192H[K[51;192H183,1[9C28%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;8H[34m^[[m[1m-F[34m^[[m[0m, [34m^[[m[1m--classify[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H184,1[9C28%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;15Happend indicator (one of */=>@|) to entries[34m^[[m[m[34m^M[m[51;192H[K[51;192H185,1[9C29%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m[m[34m^M[50;8H^[[m[1m--file-type[34m^[[m[0m[34m^[[m[m[34m^M[m[51;192H[K[51;192H186,1[9C29%[49;1H[?12l[?25h[?25l[51;194H7[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m[7m Manual page ls(1) line 1 (press h for help or q to quit)[34m^[[m[27m[34m^[[m[K[34m^M^[[m[K[34m^[[m[?1l[34m^[[m>[34m^[[m[?1049l[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[ma"[34m^H[md"[34m^H[md"[34m^H[mi"[34m^H[mt"[34m^H[mi"[34m^H[mo""[50;1H[34m^H[mn"[34m^H[ma"[34m^H[ml"[34m^H[m "[34m^H[mi"[34m^H[mn"[34m^H[mo"[34m^H^H^[[m[1P"[34m^H[mf"[34m^H[mo"[34m^H[mr"[34m^H[mm"[34m^H[ma"[34m^H[mt"[34m^H[mi"[34m^H[mo"[34m^H[mn"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H188,1[9C29%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hadditional information[34m^M[m[51;192H[K[51;192H189,1[9C30%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -l[34m^M[m[51;192H[K[51;192H190,1[9C30%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Htotal 20[34m^M[m[51;192H[K[51;192H191,1[9C30%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H-rwxrwxr-x 1 vagrant vagrant 8193 Jul  4 05:29 [34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m[34m^M[m[51;192H[K[51;192H192,1[9C30%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H-rw-rw-r-- 1 vagrant vagrant 8192 Jul  4 05:29 typescript[34m^M[m[51;192H[K[51;192H193,1[9C30%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[ma"[34m^H[md"[34m^H[md"[34m^H[mi"[34m^H[mt"[34m^H[mi"[34m^H[mo"[34m^H[mn"[34m^H[ma"[34m^H[ml"[34m^H[m "[34m^H[mi"[34m^H[mn"[34m^H[mf"[34m^H[mo"[34m^H[mr"[34m^H[mm"[34m^H[ma"[34m^H[mt"[34m^H[mi"[34m^H[mo"[34m^H[mn"[34m^H[m "[34m^H[mi"[34m^H[mn"[34m^H[m "[34m^H[mh"[34m^H[mu"[34m^H[mm"[34m^H[ma"[34m^H[mn""[50;1H[34m^H[m "[34m^H[mr"[34m^H[me"[34m^H[ma"[34m^H[md"[34m^H[ma"[34m^H[mb"[34m^H[ml"[34m^H[me"[34m^H[m "[34m^H^H^[[m[1P"[34m^H[m "[34m^H[mf"[34m^H[mo"[34m^H[mr"[34m^H[mm"[34m^H[ma"[34m^H[mt"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H194,1[9C31%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hadditional information in human readable format[34m^M[m[51;192H[K[51;192H195,1[9C31%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -l -h[34m^M[m[51;192H[K[51;192H196,1[9C31%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Htotal 28K[34m^M[m[51;192H[K[51;192H197,1[9C31%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H-rwxrwxr-x 1 vagrant vagrant 13K Jul  4 05:30 [34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m[34m^M[m[51;192H[K[51;192H198,1[9C32%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H-rw-rw-r-- 1 vagrant vagrant 12K Jul  4 05:30 typescript[34m^M[m[51;192H[K[51;192H199,1[9C32%[50;1H[?12l[?25h[?25l[1;50r[1;1H[3M[1;51r[48;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[ml"[34m^H[mi"[34m^H[ms"[34m^H[mt"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[mi"[34m^H[mt"[34m^H[me"[34m^H[mm"[34m^H[ms"[34m^H[m "[34m^H[mi"[34m^H[mn"[34m^H[m "[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mb"[34m^H[my"[34m^H[m "[34m^H[ml"[34m^H[ma"[34m^HH[m[49;1Hs"[34m^H[mt"[34m^H[m "[34m^H[mt"[34m^H[mi"[34m^H[mm"[34m^H[me"[34m^H[m "[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mt"[34m^H[mi"[34m^H[mm"[34m^H[me"[34m^H[m "[34m^H[mo"[34m^H[mf"[34m^H[m "[34m^H[ml"[34m^H[ma"[34m^H[ms"[34m^H[mt"[34m^H[m "[34m^H[mc"[34m^H[mh"[34m^H[ma"[34m^H[mn"[34m^H[mg"[34m^H[me"[34m^H^^[50;1HM[m[51;192H[K[51;192H200,1[9C32%[48;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hlist the items by time of last change[34m^M[m[51;192H[K[51;192H201,1[9C32%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -t [34m^H^[[m[K[34m^M[m[51;192H[K[51;192H202,1[9C33%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m  typescript[34m^M[m[51;192H[K[51;192H203,1[9C33%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ::[34m^H^[[m[C[34m^H^[[m[K[34m^H^[[m[K""[34m^H[ml"[34m^H[mi"[34m^H[me"[34m^H[ms"[34m^H[mt"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[mi"[34m^H[mt"[34m^H[me"[34m^H[mm"[34m^H[ms"[34m^H[m "[34m^H[mi"[34m^H[mn"[34m^H[m "[34m^H[mr"[34m^H[me"[34m^H[mv"[34m^H[me"[34m^H[mr"[34m^H[ms"[34m^H[me""[50;1H[34m^H[m "[34m^H[mo"[34m^H[mr"[34m^H[md"[34m^H[me"[34m^H[mr"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H204,1[9C33%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hliest the items in reverse order[34m^M[m[51;192H[K[51;192H205,1[9C33%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -r[34m^M[m[51;192H[K[51;192H206,1[9C34%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Htypescript  [34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m[34m^M[m[51;192H[K[51;192H207,1[9C34%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[mt"[34m^H[mo"[34m^H[m "[34m^H[mf"[34m^H[mi"[34m^H[mn"[34m^H[md"[34m^H[m "[34m^H[mm"[34m^H[mo"[34m^H[ms"[34m^H[mt"[34m^H[m "[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[me"[34m^H[md"[34m^H[mi"[34m^H[mt"[34m^H[ms"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H208,1[9C34%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hto find most recent edits[34m^M[m[51;192H[K[51;192H209,1[9C34%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -rt[34m^M[m[51;192H[K[51;192H210,1[9C35%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Htypescript  [34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m[34m^M[m[51;192H[K[51;192H211,1[9C35%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ le[34m^H^[[m[Ks -F Downloads[34m^M[m[51;192H[K[51;192H212,1[9C35%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1Hls: cannot access Downloads: No such file or directory[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls -F Desktop[34m^M[m[51;192H[K[51;192H213,1[9C35%[49;1H[?12l[?25h[?25l[51;194H4[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hls: cannot access Desktop: No such file or directory[34m^M[m[51;192H[K[51;192H215,1[9C35%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo don[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K""[34m^H[md"[34m^H[mo"[34m^H[mn"[34m^H^H^[[m[1P"[34m^H[mw"[34m^H[mn"[34m^H[ml"[34m^H[mo"[34m^H[ma"[34m^H[md"[34m^H[m "[34m^H[ms"[34m^H[mh"[34m^H[me"[34m^H[ml"[34m^H[ml"[34m^H^H^[[m[1P"[34m^H[ml"[34m^H[m "[34m^H[ml"[34m^H[me"[34m^H[ms"[34m^H[mss[50;1H"[34m^H[mo"[34m^H[mn"[34m^H[m "[34m^H[md"[34m^H[ma"[34m^H[mt"[34m^H[me"[34m^H^H^[[m[1P"[34m^H[ma"[34m^H[m."[34m^H[mz"[34m^H[mi"[34m^H[mp"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H216,1[9C36%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hdownload shell lesson data.zip[34m^M[m[51;192H[K[51;192H217,1[9C36%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip[34m^M[m[51;192H[K[51;192H218,1[9C36%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H--2023-07-04 05:38:07--  https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip[34m^M[m[51;192H[K[51;192H219,1[9C36%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HResolving swcarpentry.github.io (swcarpentry.github.io)... 185.199.111.153, 185.199.108.153, 185.199.110.153, ...[34m^M[m[51;192H[K[51;192H220,1[9C37%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HConnecting to swcarpentry.github.io (swcarpentry.github.io)|185.199.111.153|:443... connected.[34m^M[m[51;192H[K[51;192H221,1[9C37%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HHTTP request sent, awaiting response... 200 OK[34m^M[m[51;192H[K[51;192H222,1[9C37%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HLength: 460289 (450K) [application/zip][34m^M[m[51;192H[K[51;192H223,1[9C37%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HSaving to: ‘shell-lesson-data.zip’[34m^M[m[51;192H[K[51;192H224,1[9C37%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H225,1[9C38%[50;1H[?12l[?25h[?25l[1;50r[1;1H[4M[1;51r[47;1H[34m^M[m 0% [[168C] 0[11C--.-K/s[12C  [48;1H [34m^M[m69% [===================================================================================================================>[52C] 318,808     1.44MB/s[10C  [49;1H  [34m^M[m100%[=======================================================================================================================================================================>] 460,289     2.01MB/s   in 0.2ss[50;1H   [34m^M[m[51;192H[K[51;192H226,1[9C38%[47;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[m[51;192H[K[51;192H227,1[9C38%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H2023-07-04 05:38:08 (2.01 MB/s) - ‘shell-lesson-data.zip’ saved [460289/460289][34m^M[m[51;192H[K[51;192H228,1[9C39%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ sudo apt-get install unzip[34m^M[m[51;192H[K[51;192H229,1[9C39%[49;1H[?12l[?25h[?25l[51;193H30[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[mReading package lists... 0%[34m^M^M[mReading package lists... 100%[34m^M^M[mReading package lists... Done[34m^M^M[m[51;192H[K[51;192H231,1[9C39%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^M[mBuilding dependency tree... 0%[34m^M^M[mBuilding dependency tree... 0%[34m^M^M[mBuilding dependency tree... 50%[34m^M^M[mBuilding dependency tree... 50%[34m^M^M[mBuilding dependency tree... 94%[34m^M^M[mBuilding dependency tree[7C[34m^M^^[50;1HM[m[51;192H[K[51;192H232,1[9C40%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^M[mReading state information... 0%[34m^M^M[mReading state information... 0%[34m^M^M[mReading state information... Done[34m^M^M[m[51;192H[K[51;192H233,1[9C40%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HSuggested packages:[34m^M[m[51;192H[K[51;192H234,1[9C40%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;3Hzip[34m^M[m
+The following NEW packages will be installed:[34m^M[m[51;192H[K[51;192H235,1[9C40%[49;1H[?12l[?25h[?25l[51;194H6[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hunzip[34m^M[m[51;192H[K[51;192H237,1[9C40%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.[34m^M[m[51;192H[K[51;192H238,1[9C41%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HNeed to get 157 kB of archives.[34m^M[m[51;192H[K[51;192H239,1[9C41%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HAfter this operation, 395 kB of additional disk space will be used.[34m^M[m[51;192H[K[51;192H240,1[9C41%[50;1H[?12l[?25h[?25l[1;50r[1;1H[4M[1;51r[47;1H[34m^M^M[m0% [Working][34m^M[12C^M[m0% [Waiting for headers][34m^M[m0% [Waiting for headers][34m^M[m0% [Waiting for headers][34m^M[m0% [Waiting for headers][34m^M[m0% [Waiting for headers][34m^M[24C^M[mGet:1 http://archive..[48;1Hubuntu.com/ubuntu/ trusty-updates/main unzip amd64 6.0-9ubuntu1.5 [157 kB][34m^M
+^M[24C^M[m0% [1 unzip 0 B/157 kB 0%][34m^M[26C^M[m100% [Working][34m^M[14C^M[mFetched 157 kB in 2s (55.5 kB/s)[34m^M[m
+Selecting previously unselected package unzip.[34m^M[m[51;192H[K[51;192H241,1[9C42%[47;1H[?12l[?25h[?25l[51;194H2[49;1H[?12l[?25h[?25l[51;194H3[50;1H[?12l[?25h[?25l[1;50r[1;1H[5M[1;51r[46;1H(Reading database ... [34m^M[m(Reading database ... 5%[34m^M[m(Reading database ... 10%[34m^M[m(Reading database ... 15%[34m^M[m(Reading database ... 20%[34m^M[m(Reading database ... 25%[34m^M[m(Reading database ... 30%[34m^M[m(Reading database ... 355[47;1H%[34m^M[m(Reading database ... 40%[34m^M[m(Reading database ... 45%[34m^M[m(Reading database ... 50%[34m^M[m(Reading database ... 55%[34m^M[m(Reading database ... 60%[34m^M[m(Reading database ... 65%[34m^M[m(Reading database ... 70%[34m^M[m(Reading databasee[48;1H ... 75%[34m^M[m(Reading database ... 80%[34m^M[m(Reading database ... 85%[34m^M[m(Reading database ... 90%[34m^M[m(Reading database ... 95%[34m^M[m(Reading database ... 100%[34m^M[m(Reading database ... 63988 files and directories currently inss[49;1Htalled.)[34m^M[m
+Preparing to unpack .../unzip_6.0-9ubuntu1.5_amd64.deb ...[34m^M[m[51;192H[K[51;192H244,1[9C42%[46;1H[?12l[?25h[?25l[51;194H5[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HUnpacking unzip (6.0-9ubuntu1.5) ...[34m^M[m[51;192H[K[51;192H246,1[9C42%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HProcessing triggers for man-db (2.6.7.1-1ubuntu1) ...[34m^M[m[51;192H[K[51;192H247,1[9C43%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HProcessing triggers for mime-support (3.54ubuntu1.1) ...[34m^M[m[51;192H[K[51;192H248,1[9C43%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HSetting up unzip (6.0-9ubuntu1.5) ...[34m^M[m[51;192H[K[51;192H249,1[9C43%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls[34m^M[m[51;192H[K[51;192H250,1[9C43%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m  [34m^[[m[01;31mshell-lesson-data.zip[34m^[[m[0m  typescript[34m^M[m[51;192H[K[51;192H251,1[9C44%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ unzip file.zip[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K shell-lesson-data.zip [34m^M[m[51;192H[K[51;192H252,1[9C44%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1HArchive:  shell-lesson-data.zip[34m^M[m[51;192H[K[51;192H253,1[9C44%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/[34m^M[m[51;192H[K[51;192H254,1[9C44%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/north-pacific-gyre/[34m^M[m[51;192H[K[51;192H255,1[9C44%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/exercise-data/[34m^M[m[51;192H[K[51;192H256,1[9C45%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;4Hcreating: shell-lesson-data/exercise-data/writing/[34m^M[m
+  inflating: shell-lesson-data/exercise-data/writing/LittleWomen.txt  [34m^M[m[51;192H[K[51;192H257,1[9C45%[49;1H[?12l[?25h[?25l[51;194H8[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/writing/haiku.txt  [34m^M[m[51;192H[K[51;192H259,1[9C45%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/exercise-data/creatures/[34m^M[m[51;192H[K[51;192H260,1[9C45%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/creatures/basilisk.dat  [34m^M[m[51;192H[K[51;192H261,1[9C46%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/creatures/unicorn.dat  [34m^M[m[51;192H[K[51;192H262,1[9C46%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/creatures/minotaur.dat  [34m^M[m[51;192H[K[51;192H263,1[9C46%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/exercise-data/animal-counts/[34m^M[m[51;192H[K[51;192H264,1[9C46%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/animal-counts/animals.csv  [34m^M[m[51;192H[K[51;192H265,1[9C46%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;2Hextracting: shell-lesson-data/exercise-data/numbers.txt  [34m^M[m[51;192H[K[51;192H266,1[9C47%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01978B.txt  [34m^M[m[51;192H[K[51;192H267,1[9C47%[50;1H[?12l[?25h[?25l[1;50r[1;1H[4M[1;51r[47;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02018B.txt  [34m^M[m
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01736A.txt  [34m^M[m
+  inflating: shell-lesson-data/north-pacific-gyre/NENE01751A.txt  [34m^M[m
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02043B.txt  [34m^M[m[51;192H[K[51;192H268,1[9C47%[47;1H[?12l[?25h[?25l[51;194H9[48;1H[?12l[?25h[?25l[51;193H70[49;1H[?12l[?25h[?25l[51;194H1[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040B.txt  [34m^M[m[51;192H[K[51;192H272,1[9C47%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01751B.txt  [34m^M[m[51;192H[K[51;192H273,1[9C48%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040Z.txt  [34m^M[m[51;192H[K[51;192H274,1[9C48%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01971Z.txt  [34m^M[m[51;192H[K[51;192H275,1[9C48%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01812A.txt  [34m^M[m[51;192H[K[51;192H276,1[9C48%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01729A.txt  [34m^M[m
+  inflating: shell-lesson-data/north-pacific-gyre/NENE02043A.txt  [34m^M[m[51;192H[K[51;192H277,1[9C49%[49;1H[?12l[?25h[?25l[51;194H8[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01729B.txt  [34m^M[m[51;192H[K[51;192H279,1[9C49%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01843A.txt  [34m^M[m[51;192H[K[51;192H280,1[9C49%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE02040A.txt  [34m^M[m[51;192H[K[51;192H281,1[9C49%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01978A.txt  [34m^M[m[51;192H[K[51;192H282,1[9C50%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/goodiff.sh  [34m^M[m[51;192H[K[51;192H283,1[9C50%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/goostats.sh  [34m^M[m[51;192H[K[51;192H284,1[9C50%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/north-pacific-gyre/NENE01843B.txt  [34m^M[m[51;192H[K[51;192H285,1[9C50%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;4Hcreating: shell-lesson-data/exercise-data/alkanes/[34m^M[m[51;192H[K[51;192H286,1[9C50%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;3Hinflating: shell-lesson-data/exercise-data/alkanes/methane.pdb  [34m^M[m
+  inflating: shell-lesson-data/exercise-data/alkanes/propane.pdb  [34m^M[m[51;192H[K[51;192H287,1[9C51%[49;1H[?12l[?25h[?25l[51;194H8[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/alkanes/ethane.pdb  [34m^M[m[51;192H[K[51;192H289,1[9C51%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;3Hinflating: shell-lesson-data/exercise-data/alkanes/pentane.pdb  [34m^M[m[51;192H[K[51;192H290,1[9C51%[50;1H[?12l[?25h[?25l[1;50r[1;1H[4M[1;51r[47;3Hinflating: shell-lesson-data/exercise-data/alkanes/octane.pdb  [34m^M[m
+  inflating: shell-lesson-data/exercise-data/alkanes/cubane.pdb  [34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls[34m^M
+^[[m[0m[34m^[[m[01;32mmy_unix_session.txt[34m^[[m[0m  [34m^[[m[01;34mshell-lesson-data[34m^[[m[0m  [34m^[[m[01;31mshell-lesson-data.zip[34m^[[m[0m  typescript[34m^M[m[51;192H[K[51;192H291,1[9C52%[47;1H[?12l[?25h[?25l[51;194H2[48;1H[?12l[?25h[?25l[51;194H3[49;1H[?12l[?25h[?25l[51;194H4[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo :[34m^H^[[m[K""[34m^H[ml"[34m^H[mo"[34m^H[mo"[34m^H[mk"[34m^H[ms"[34m^H[m "[34m^H[mc"[34m^H[mo"[34m^H[mn"[34m^H[mt"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[mb"[34m^H[my"[34m^H[m "[34m^H[mp"[34m^H[ma"[34m^H[mr"[34m^H[ms"[34m^H[mi"[34m^H[mn"[34m^H[mg"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^^[50;1HH^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[ms"[34m^H[ms"[34m^H[mi"[34m^H[mn"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H[m "[34m^H[mn"[34m^H[ma"[34m^H[mm"[34m^H[me"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H295,1[9C52%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hlooks content by passin directory name[34m^M[m[51;192H[K[51;192H296,1[9C52%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ ls shel[34m^G[ml-lesson-data[34m^M[m[51;192H[K[51;192H297,1[9C52%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[0m[34m^[[m[01;34mexercise-data[34m^[[m[0m  [34m^[[m[01;34mnorth-pacific-gyre[34m^[[m[0m[34m^M[m[51;192H[K[51;192H298,1[9C53%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ echo ""[34m^H[mc"[34m^H[mh"[34m^H[ma"[34m^H[mn"[34m^H[mg"[34m^H[me"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mc"[34m^H[ma"[34m^H^H^[[m[1P"[34m^H[mh"[34m^H[ma"[34m^H[mn"[34m^H[mg"[34m^H[me"[34m^HH[m[50;1Hs"[34m^H^H^[[m[1P"[34m^H[m "[34m^H[ms"[34m^H[mh"[34m^H[me"[34m^H[ml"[34m^H[ml"[34m^H[m'"[34m^H[ms"[34m^H[m "[34m^H[mc"[34m^H[mu"[34m^H[mr"[34m^H[mr"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[mw"[34m^H[mo"[34m^H[mr"[34m^H[mk"[34m^H[mi"[34m^H[mn"[34m^H[mg"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H299,1[9C53%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hchange shell's current working directory[34m^M[m[51;192H[K[51;192H300,1[9C53%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ cd shell-lesson-data/[34m^M[m[51;192H[K[51;192H301,1[9C53%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd execer[34m^G^H^[[m[K[34m^G^H^[[m[K[34m^H^[[m[Krcise-data/[34m^M[m[51;192H[K[51;192H302,1[9C54%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pws[34m^H^[[m[Kd[34m^M[m[51;192H[K[51;192H303,1[9C54%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data/exercise-data[34m^M[m[51;192H[K[51;192H304,1[9C54%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ls _F[34m^H^[[m[K[34m^H^[[m[K-F[34m^M[m[51;192H[K[51;192H305,1[9C54%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[0m[34m^[[m[01;34malkanes[34m^[[m[0m/  [34m^[[m[01;34manimal-counts[34m^[[m[0m/  [34m^[[m[01;34mcreatures[34m^[[m[0m/  numbers.txt  [34m^[[m[01;34mwriting[34m^[[m[0m/[34m^M[m[51;192H[K[51;192H306,1[9C54%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""[34m^H[mm"[34m^H[mo"[34m^H[mv"[34m^H[me"[34m^H[m "[34m^H[mt"[34m^H[mo"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[mc"[34m^H[mu"[34m^H[mr""[50;1H[34m^H[mr"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H[m "[34m^H[mp"[34m^H[ma"[34m^H[mr"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H307,1[9C55%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hmove to the current directory parent[34m^M[m[51;192H[K[51;192H308,1[9C55%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd ..[34m^M[m[51;192H[K[51;192H309,1[9C55%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ pwd[34m^M[m[51;192H[K[51;192H310,1[9C55%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data[34m^M[m[51;192H[K[51;192H311,1[9C56%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ who [34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^G^G^G^G^G^G[mwho[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Keco[34m^H^[[m[Ko[34m^H^[[m[Kho ""[34m^H[ms"[34m^H[mh"[34m^H[mo"[34m^^[50;1HH[mw"[34m^H[m "[34m^H[ma"[34m^H[ml"[34m^H[ml"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H312,1[9C56%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hshow all[34m^M[m[51;192H[K[51;192H313,1[9C56%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls -F -a[34m^M[m[51;192H[K[51;192H314,1[9C56%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m[0m[34m^[[m[01;34m.[34m^[[m[0m/  [34m^[[m[01;34m..[34m^[[m[0m/  [34m^[[m[01;34mexercise-data[34m^[[m[0m/  [34m^[[m[01;34mnorth-pacific-gyre[34m^[[m[0m/[34m^M[m[51;192H[K[51;192H315,1[9C56%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""[34m^H[mr"[34m^H[me"[34m^H[mt"[34m^H[mu"[34m^H[mr"[34m^H[mn"[34m^H[m "[34m^H[mt"[34m^H[mo"[34m^H[m "[34m^H[mh"[34m^H[mo"[34m^H[mm"[34m^H[me"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo""[50;1H[34m^H[mr"[34m^H[my"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H316,1[9C57%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hreturn to home directory[34m^M[m[51;192H[K[51;192H317,1[9C57%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd[34m^M[m[51;192H[K[51;192H318,1[9C57%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ pwd[34m^M[m[51;192H[K[51;192H319,1[9C57%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant[34m^M[m[51;192H[K[51;192H320,1[9C58%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ c [34m^H^[[m[Kd s[34m^H^[[m[Kshell-lesson-data/exercise-data/[34m^M[m[51;192H[K[51;192H321,1[9C58%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ pwed[34m^H^[[m[K[34m^H^[[m[Kd[34m^M[m[51;192H[K[51;192H322,1[9C58%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data/exercise-data[34m^M[m[51;192H[K[51;192H323,1[9C58%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo ""[34m^H[m~"[34m^H[m "[34m^H[ms"[34m^H[mt"[34m^H[ma"[34m^H[mr"[34m^H[mt"[34m^H[m "[34m^H[mf"[34m^H[mr"[34m^H[mo"[34m^H[mm"[34m^H[m "[34m^H[mt"[34m^H[mh""[50;1H[34m^H[me"[34m^H[m "[34m^H[mc"[34m^H[mu"[34m^H[mr"[34m^H[mr"[34m^H[me"[34m^H[mn"[34m^H[mt"[34m^H[m "[34m^H[mu"[34m^H[ms"[34m^H[me"[34m^H[mr"[34m^H[m "[34m^H[mh"[34m^H[mo"[34m^H[mm"[34m^H[me"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H324,1[9C59%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H~ start from the current user home directory[34m^M[m[51;192H[K[51;192H325,1[9C59%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ ce [34m^H^[[m[K[34m^H^[[m[K D[34m^H^[[m[K[34m^H^[[m[Kd ~/shell-lesson-data/[34m^M[m[51;192H[K[51;192H326,1[9C59%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/v[34m^G^H^[[m[Kcreatures/[34m^M[m[51;192H[K[51;192H327,1[9C59%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ echo ""[34m^H[mm"[34m^H[mo"[34m^H[mv"[34m^H[me"[34m^H[m "[34m^H[mt"[34m^H[mo"[34m^H[m "[34m^H[mt"[34m^H[mh""[50;1H[34m^H[me"[34m^H[m "[34m^H[mp"[34m^H[mr"[34m^H[me"[34m^H[mv"[34m^H[mi"[34m^H[mo"[34m^H[mu"[34m^H[ms"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[my"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H328,1[9C60%[49;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hmove to the previous directory[34m^M[m[51;192H[K[51;192H329,1[9C60%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ c [34m^H^[[m[Kd -[34m^M[m[51;192H[K[51;192H330,1[9C60%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data[34m^M[m[51;192H[K[51;192H331,1[9C60%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/[34m^M[m[51;192H[K[51;192H332,1[9C60%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd creatures/[34m^M[m[51;192H[K[51;192H333,1[9C61%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd -[34m^M[m[51;192H[K[51;192H334,1[9C61%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data/exercise-data[34m^M[m[51;192H[K[51;192H335,1[9C61%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd -[34m^M[m[51;192H[K[51;192H336,1[9C61%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H/home/vagrant/shell-lesson-data/exercise-data/creatures[34m^M[m[51;192H[K[51;192H337,1[9C61%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creatures[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd ..[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd[34m^M[m[51;192H[K[51;192H338,1[9C62%[49;1H[?12l[?25h[?25l[51;194H9[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~$ cd dsh[34m^G^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Kshell-lesson-data/[34m^M[m[51;192H[K[51;192H340,1[9C62%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ echo ""[34m^H[md"[34m^H[mi"[34m^H[ms"[34m^H[mp"[34m^H[ml"[34m^H[ma"[34m^H[my"[34m^H[m "[34m^H[mt"[34m^H[mh"[34m^H[me"[34m^H[m "[34m^H[ms"[34m^H[mi"[34m^H[mz"[34m^H[me"[34m^H[m "[34m^H[mo"[34m^H[mf"[34m^H[m "[34m^H[mt"[34m^H[mh""[50;1H[34m^H[me"[34m^H[m "[34m^H[mf"[34m^H[mi"[34m^H[ml"[34m^H[me"[34m^H[ms"[34m^H[m "[34m^H[ma"[34m^H[mn"[34m^H[md"[34m^H[m "[34m^H[md"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H^H^[[m[1P"[34m^H[mi"[34m^H[mr"[34m^H[me"[34m^H[mc"[34m^H[mt"[34m^H[mo"[34m^H[mr"[34m^H[mi"[34m^H[me"[34m^H[ms"[34m^H^[[m[C[34m^M[m[51;192H[K[51;192H341,1[9C62%[49;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1Hdisplay the size of the files and directories[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls - s [34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[Ks exercise-data/[34m^M[m[51;192H[K[51;192H342,1[9C63%[49;1H[?12l[?25h[?25l[51;194H3[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Htotal 20[34m^M[m[51;192H[K[51;192H344,1[9C63%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H4 [34m^[[m[0m[34m^[[m[01;34malkanes[34m^[[m[0m  4 [34m^[[m[01;34manimal-counts[34m^[[m[0m  4 [34m^[[m[01;34mcreatures[34m^[[m[0m  4 numbers.txt  4 [34m^[[m[01;34mwriting[34m^[[m[0m[34m^M[m[51;192H[K[51;192H345,1[9C63%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls [34m^G[mno[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^G^G^G[mle[34m^H^[[m[Ks north-pacific-gyre/[34m^M[m[51;192H[K[51;192H346,1[9C63%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hgoodiff.sh   NENE01729A.txt  NENE01736A.txt  NENE01751B.txt  NENE01843A.txt  NENE01971Z.txt  NENE01978B.txt  NENE02040A.txt  NENE02040Z.txt  NENE02043B.txt[34m^M[m[51;192H[K[51;192H347,1[9C63%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hgoostats.sh  NENE01729B.txt  NENE01751A.txt  NENE01812A.txt  NENE01843B.txt  NENE01978A.txt  NENE02018B.txt  NENE02040B.txt  NENE02043A.txt[34m^M[m[51;192H[K[51;192H348,1[9C64%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/g[34m^G[moo[34m^G^M[m[51;192H[K[51;192H349,1[9C64%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hls: cannot access north-pacific-gyre/goo: No such file or directory[34m^M[m[51;192H[K[51;192H350,1[9C64%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo[34m^G^M[m
+goodiff.sh   goostats.sh  [34m^M[m[51;192H[K[51;192H351,1[9C64%[49;1H[?12l[?25h[?25l[51;194H2[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo[34m^M[m[51;192H[K[51;192H353,1[9C65%[50;1H[?12l[?25h[?25l[1;50r[50;1H
+[1;51r[50;1Hgoodiff.sh   goostats.sh  [34m^M[m[51;192H[K[51;192H354,1[9C65%[50;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls north-pacific-gyre/goo[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[[m[50;1H[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^H^[[m[K[34m^G^G^G[mcd exercise-data/writing/[34m^M[m[51;192H[K[51;192H355,1[9C65%[49;1H[?12l[?25h[?25l[1;50r[1;1H[2M[1;51r[49;1H[34m^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writing[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls[34m^M[m
+haiku.txt  LittleWomen.txt[34m^M[m[51;192H[K[51;192H356,1[9C65%[49;1H[?12l[?25h[?25l[51;194H7[50;1H[?12l[?25h[?25l[51;192H[K[51;1H:[?12l[?25hw[?25l[?12l[?25hq[?25l[?12l[?25h[?25l"my_unix_session.txt"
+[97m[41mWARNING: The file has been changed since reading it!!![m
+[32mDo you really want to write to it (y/n)?[?12l[?25h[mn
+[32mPress ENTER or type command to continue[m[1;1H[3L[?25l[1;1Hshow all[34m^M
+^[[m]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data[34m^G[mvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls -F -a[34m^M
+^[[m[0m[34m^[[m[01;34m.[34m^[[m[0m/  [34m^[[m[01;34m..[34m^[[m[0m/  [34m^[[m[01;34mexercise-data[34m^[[m[0m/  [34m^[[m[01;34mnorth-pacific-gyre[34m^[[m[0m/[34m^M[m[51;1H[K[51;192H357,1[9C65%[50;1H[?12l[?25h[?25l[51;192H[K[51;1H:[?12l[?25hq[?25l[?12l[?25h1[?25l[?12l[?25h[?25l[97m[41mE488: Trailing characters[m[166C357,1[9C65%[50;1H[?12l[?25h[?25l[51;1H[K[51;1H:[?12l[?25hq[?25l[?12l[?25h1[?25l[?12l[?25h[?25l[97m[41mE488: Trailing characters[m[166C357,1[9C65%[50;1H[?12l[?25h[?25l[51;1H[K[51;1H:[?12l[?25hq[?25l[?12l[?25hq[?25l[?12l[?25hq[?25l[?12l[?25hq[?25l[?12l[?25hq[?25l[?12l[?25h[?25l[51;6H[K[51;6H[?12l[?25h[?25l[51;5H[K[51;5H[?12l[?25h[?25l[51;4H[K[51;4H[?12l[?25h[?25l[51;3H[K[51;3H[?12l[?25h![?25l[?12l[?25h[?25l[51;1H[K[51;1H[?1l>[?12l[?25h[?1049l]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ vim my_unix_session.txt [Kvim my_unix_session.txt [1@nano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd .. [22@head -n 5 sorted_length.txt[Csort -n length.txt > sorted_length.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@F[1P[1@F[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P sorted_length.txt[1Psorted_length.txt[1Ported_length.txt[1Prted_length.txt[1Pted_length.txt[1Ped_length.txt[1Pd_length.txt[1P_length.txt[1Plength.txt[1Pength.txt[1Pngth.txt[1Pgth.txt[1Pth.txt[1Ph.txt[1P.txt[1Ptxt[1Pxt[1Pt[K[Kexit
+exit
+There are stopped jobs.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ exit
+Script done on Tue 04 Jul 2023 08:54:22 AM UTC
