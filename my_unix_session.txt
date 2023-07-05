@@ -832,3 +832,956 @@ exit
 There are stopped jobs.
 ]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ exit
 Script done on Tue 04 Jul 2023 08:54:22 AM UTC
+Script started on Wed 05 Jul 2023 04:53:17 AM UTC
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ec[K[Kecho ""r"e"s"y"n"e"[1P"[1P"[1P"u"m"e" "p"i"p"e" "a"n"d" "f"i"l"t"e"r"s"[C
+resume pipe and filters
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ exit
+exit
+
+Script done on Wed 05 Jul 2023 04:53:50 AM UTC
+Script started on Wed 05 Jul 2023 05:02:43 AM UTC
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;34mgit_workspace[0m  [01;32mmy_unix_session.txt[0m  [01;32mmy_unix_session.txt.save[0m  README.md  [01;34mshell-lesson-data[0m  [01;31mshell-lesson-data.zip[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ sh[K[Kche shell-lesson-data
+No command 'che' found, did you mean:
+ Command 'the' from package 'the' (universe)
+ Command 'cht' from package 'chemtool' (universe)
+ Command 'cme' from package 'libconfig-model-perl' (universe)
+ Command 'chef' from package 'filters' (universe)
+ Command 'cde' from package 'cde' (universe)
+ Command 'chem' from package 'groff' (main)
+che: command not found
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls
+[0m[01;34mgit_workspace[0m  [01;32mmy_unix_session.txt[0m  [01;32mmy_unix_session.txt.save[0m  README.md  [01;34mshell-lesson-data[0m  [01;31mshell-lesson-data.zip[0m  typescript
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ch[Kd shell-lesson-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ls
+[0m[01;34mexercise-data[0m  [01;32mmy_unix_session.txt[0m  [01;34mnorth-pacific-gyre[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd [K[K[Kcd exercise-data/alkanes/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls
+cubane.pdb  ethane.pdb  length.txt  methane.pdb  octane.pdb  pentane.pdb  propane.pdb  sorted_length.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ sort -n length.txt | txt[K[K[Khead -n 1
+   9 methane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ we[Kc -l *.pdf[K[Kdb | sort -n | head -n 1
+   9 methane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cd 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cdd [K[K shell-lesson-data/exce[K[K3[Kw[Kercise-data/animal-counts/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ ls
+animals.csv
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cat anmila[K[K[K[Kimal.csv
+cat: animal.csv: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cat animal.csv[Cs.csv
+2012-11-05,deer,5
+2012-11-05,rabbit,22
+2012-11-05,raccoon,7
+2012-11-06,rabbit,19
+2012-11-06,deer,2
+2012-11-06,fox,4
+2012-11-07,rabbit,16
+2012-11-07,bear,1
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cat animals.csv | head -n 5 \[K| tail -n 3 | sor [Kt -r [K > fintal[K[K[Kal.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ ls
+animals.csv  final.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ nano final.txt 
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: final.txt                                                                                                                         [3;1H(B[m2012-11-06,rabbit,19[4d2012-11-06,deer,2[5d2012-11-05,raccoon,7[49;97H(B[0;7m[ Read 3 lines ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cut -d , -f 2 animals.csv 
+deer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cut -d , -f 2 animals.csv | sort [K
+bear
+deer
+deer
+fox
+rabbit
+rabbit
+rabbit
+raccoon
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cut -d , -f 2 animals.csv | sort | Uniq
+No command 'Uniq' found, did you mean:
+ Command 'uniq' from package 'coreutils' (main)
+Uniq: command not found
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cut -d , -f 2 animals.csv | sort | Uniq[C[1Pniquniq
+bear
+deer
+fox
+rabbit
+raccoon
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cut -d , -f 2 animals.csv | sort | uniq -c
+      1 bear
+      2 deer
+      1 fox
+      3 rabbit
+      1 raccoon
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/animal-countsvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/animal-counts$ cd north[K[K[K[K[K[K ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd north-pacific-gyre/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ we [K[Kc -l [K *[K[K[K[K[K[K[Kls
+goodiff.sh   NENE01729A.txt  NENE01736A.txt  NENE01751B.txt  NENE01843A.txt  NENE01971Z.txt  NENE01978B.txt  NENE02040A.txt  NENE02040Z.txt  NENE02043B.txt
+goostats.sh  NENE01729B.txt  NENE01751A.txt  NENE01812A.txt  NENE01843B.txt  NENE01978A.txt  NENE02018B.txt  NENE02040B.txt  NENE02043A.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ wc .[K-l *.txt
+  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+  300 NENE01751B.txt
+  300 NENE01812A.txt
+  300 NENE01843A.txt
+  300 NENE01843B.txt
+  300 NENE01971Z.txt
+  300 NENE01978A.txt
+  300 NENE01978B.txt
+  240 NENE02018B.txt
+  300 NENE02040A.txt
+  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ wc -l *.txt | sr[Kort -n | head -5
+  240 NENE02018B.txt
+  300 NENE01729A.txt
+  300 NENE01729B.txt
+  300 NENE01736A.txt
+  300 NENE01751A.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ wc -l *.txt | sort -n | head -5[C[1P -5[1P -5[1P -5[1P -5t -5a -5i -5l -5[C -5n-5 -5[1@-[C[C[C[1P5
+  300 NENE02040B.txt
+  300 NENE02040Z.txt
+  300 NENE02043A.txt
+  300 NENE02043B.txt
+ 5040 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ ls *Z.txt
+NENE01971Z.txt  NENE02040Z.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ echo ''l'o'p'[1P'o'[' '[1P'[1P'[' '['[1P'[1P'[1P'p' 'p'r'a'c't'i'v'[1P'c'e'[C
+loop practice
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ cd [K ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/creatures/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ for filename in bil[K[Kasilisk.dat minotaur.dat unicorn.dat 
+> do
+> echo[K[K[K[Kecho ""[CDD[K[K[K[K$filna[K[Kname
+> head -n 2 $filename | tail -n 1
+> done
+
+CLASSIFICATION: basiliscus vulgaris
+
+CLASSIFICATION: bos hominus
+
+CLASSIFICATION: equus monoceros
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ce e[K[K[Kde[K exercise-data/alkanes/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for data f[K[Kfile in *.pdb
+> echo [K[K[K[K[Kdo
+> ls *.pdb
+> done
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for datafile in *.pdb
+> do
+> s[Kls $fil[K[K[Kdatafile 
+> done
+cubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls
+cubane.pdb  ethane.pdb  length.txt  methane.pdb  octane.pdb  pentane.pdb  propane.pdb  sorted_length.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for file n[K[Kname in c*
+> do
+> ls $filename 
+> e[Kdoe[Kne
+cubane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for data[K[K[K[Kfile na[K[K[Kname in *c*
+> do
+> echo $filename [K
+> done
+cubane.pdb
+octane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for alkanes in *.pdb
+> d[Kdo
+> ecoh[K[Kho $alkanes
+> cat $alkanes > alkaned[Ks.pdb
+> d[Kdone
+cubane.pdb
+ethane.pdb
+methane.pdb
+octane.pdb
+pentane.pdb
+propane.pdb
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls
+alkanes.pdb  cubane.pdb  ethane.pdb  length.txt  methane.pdb  octane.pdb  pentane.pdb  propane.pdb  sorted_length.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ for datafile in *.pdb
+> do
+> e[Kcat $datafile >> ad[Kll.pdb
+> done
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ls
+alkanes.pdb  all.pdb  cubane.pdb  ethane.pdb  length.txt  methane.pdb  octane.pdb  pentane.pdb  propane.pdb  sorted_length.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cre[K[Kd creatures/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ ls
+basilisk.dat  minotaur.dat  unicorn.dat
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ fir [K[K[Kor file in[K[K[Kname in *.dat
+> do
+> $filename
+> head -n 100 $filename | tail -n 20
+> done
+basilisk.dat: command not found
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+minotaur.dat: command not found
+GGTTGGACCG
+AGTGAACGAA
+GCGATTGATG
+CCCAGTATTG
+GTTTCGGGTC
+CCACCAGGAA
+CAATGTTGGA
+CTTTAGCACG
+ACAGGAATCA
+ATCGTTTCGT
+AATGGTGGCA
+CTTTGGGGTT
+GCAGGCCCGC
+CTGTGCCTTC
+AACGGTCGGC
+AAATAGGACA
+GAGATTTCCT
+GCCTCAAACA
+TCGCAAGACG
+ATTTATCCGG
+unicorn.dat: command not found
+CGGTACCGAA
+AAGGGTCGCG
+CAAGTGTTCC
+CGGGACAATA
+GTTCTGCTAA
+GATAAGTATG
+TGCCGACTTA
+CCCGACCGTC
+TAGGTTATAA
+GGCACAACCG
+CTTCACTGTA
+GAGGTGTACA
+AGGATCCGTT
+GCGCGGGCGG
+CAGTCTATGT
+TTTTCGACAC
+TGGACTGCTT
+CCCTTTGAGG
+GTGGATTTTT
+CGTAACGGGT
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ for file n[K[Kname in -da[K[K[K*.dat
+> do
+> cp $filename original-*.[K[K$filename
+> done
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ ls
+basilisk.dat  minotaur.dat  original-basilisk.dat  original-minotaur.dat  original-unicorn.dat  unicorn.dat
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/creaturesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/creatures$ cd[Kcd .[K[K[K[Kd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd .
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd shell-lesson-data/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd north-pacific-gyre/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ for dtaf[K[K[Katafile in NENE*A [K.txt NENE*B.txt
+> do
+> echo #dda[K[K[K[K#[K$datafile stats-$datafile
+> done
+NENE01729A.txt stats-NENE01729A.txt
+NENE01736A.txt stats-NENE01736A.txt
+NENE01751A.txt stats-NENE01751A.txt
+NENE01812A.txt stats-NENE01812A.txt
+NENE01843A.txt stats-NENE01843A.txt
+NENE01978A.txt stats-NENE01978A.txt
+NENE02040A.txt stats-NENE02040A.txt
+NENE02043A.txt stats-NENE02043A.txt
+NENE01729B.txt stats-NENE01729B.txt
+NENE01751B.txt stats-NENE01751B.txt
+NENE01843B.txt stats-NENE01843B.txt
+NENE01978B.txt stats-NENE01978B.txt
+NENE02018B.txt stats-NENE02018B.txt
+NENE02040B.txt stats-NENE02040B.txt
+NENE02043B.txt stats-NENE02043B.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ for datafile in NENE*A.txt NENE*B.txt; do echo $datafile stats-$datafile; done[C[1@ [1@$[1@d[1@a[1@t[1@a[1@f[1@i[1@l[1@e[1@;[C[1@ [1@b[1@a[1@s[1@h[C[1@ [1@g[1@o[1@o[1@s[1@t[1@a[1@t[1@s[1@.[1@s[1@h
+NENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+NENE01812A.txt
+NENE01843A.txt
+NENE01978A.txt
+NENE02040A.txt
+NENE02043A.txt
+NENE01729B.txt
+NENE01751B.txt
+NENE01843B.txt
+NENE01978B.txt
+NENE02018B.txt
+NENE02040B.txt
+NENE02043B.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ for datafile in NENE*A.txt NENE*B.txt; do echo $datafile; bash goostats.sh $datafile stats-$datafile; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat stats-NENE01729[K9A.txt
+0.224455411571
+1.03150932862
+1.44755225695
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ cd al[K[K[K[K[Kcd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd exercise-data/alkanes/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ ec[Kcho ""s"e"[1P"h"e"l"l" "s"c"r"i"p"t"s"[C
+shell scripts
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ a[Knanomidd[K[K[K[K middle.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: middle.sh                                                                                                                         [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[mhead [32m-n[39m(B[m 15 octane.pdb [32m|[39m(B[m tail [32m-n[49d[39m(B[m[K[3;32H 5[49d(B[0;7mFile Name to Write: middle.sh                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3;34H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh 
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh 
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh [1Pnano middle.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: middle.sh                                                                                                                         [3;1H(B[mhead [32m-n[39m(B[m 15 octane.pdb [32m|[39m(B[m tail [32m-n[39m(B[m 5[49;98H(B[0;7m[ Read 1 line ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[3;34H[1;200H(B[0;7mModified[3;34H(B[mhead [32m-n[39m(B[m 15 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[49d[K[3;61H[3;61H[42m [49m(B[m[K -[K[42m [49m(B[m[K    [42m [49m(B[m[K [42m [49m(B[m[K "(B[0;1m[31m$1[39m(B[m[K[32m$[39m(B[m[K [42m [49m(B[m[K  [42m [49m(B[m[K -[K[42m [49m(B[m[K     [42m [49m(B[m[K -[K[42m [49m(B[m[K    [42m [49m(B[m[K [42m [49m(B[m[K          [42m [49m(B[m[K  [42m [49m(B[m[K -[K[42m [49m(B[m[K    [Khead [32m-n[39m(B[m 15 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[49d(B[0;7mFile Name to Write: middle.sh                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3;28H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ nano middle.shbash middle.sh [1Pnano middle.shbash middle.sh octand[Ke[K[Ke[Ke[Ke[Kne [K.d[Kpdb
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh octane.pdb[K[K[K[K[K[K[K[K[K[Kpentane.pdb
+ATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh pentane.pdb[1Poctane.pdb[11Pnano middle.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: middle.sh                                                                                                                         [3;1H(B[mhead [32m-n[39m(B[m 15 (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[49;98H(B[0;7m[ Read 1 line ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3dhead [C[C 15[1;200H(B[0;7mModified[3;10H(B[m[1P[1P(B[0;1m[33m" "[31m$1[39m(B[m" [32m|[39m(B[m tail [32m-n[39m(B[m 5[3;10H(B[0;1m[33m"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[3;11H(B[0;1m[33m$"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[3;11H(B[0;1m[33m2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 5[3;12H[C [C[C[C[C [C[49d[K[3;21Htail [C[C 5[42m [49m(B[m[K "(B[0;1m[33m""[39m(B[m(B[0;1m[33m$"[39m(B[m(B[0;1m[33m3"[39m(B[m[49d(B[0;7mFile Name to Write: middle.sh                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3;32H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ nano middle.shbash middle.sh pentane.pdb 20 6
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+ATOM     14  H           1      -1.259   1.420   0.112  1.00  0.00
+ATOM     15  H           1      -2.608  -0.407   1.130  1.00  0.00
+ATOM     16  H           1      -2.540  -1.303  -0.404  1.00  0.00
+ATOM     17  H           1      -3.393   0.254  -0.321  1.00  0.00
+TER      18              1
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash middle.sh pentane.pdb 20 6[17Pnano middle.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: middle.sh                                                                                                                         [3;1H(B[mhead [32m-n[39m(B[m (B[0;1m[33m"$2"[39m(B[m (B[0;1m[33m"$1"[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m (B[0;1m[33m"$3"[49;98H[39m(B[0;7m[ Read 1 line ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[2;48r[2;1HM[1;51r[1;200H(B[0;7mModified[4d(B[m[A[2;49r[2;1HM[1;51r[3;1H[36m# Select lines from the middle of a file.[4d# Usage: bash middle.sh filename end_line num_lines[39m(B[m[49d(B[0;7mFile Name to Write: middle.sh                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[4;52H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ nanho s[K[K[K[Ko sorted.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: sorted.sh                                                                                                                         [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[0m[36m# Sort files b[39m(B[m[36my their length.[4d# Usage: bash sorted.sh one_or_more_filenames[5d[39m(B[mwc -l (B[0;1m[33m"$@"[39m(B[m [32m|[39m(B[m sort [32m-n[49d[39m(B[m[K[5;21H[49d(B[0;7mFile Name to Write: sorted.sh                                                                                                                                                                                    [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;30H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 3 lines ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[5;21H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash sorted.sh *.pdb ../creatures/*.dat
+    9 methane.pdb
+   12 ethane.pdb
+   15 alkanes.pdb
+   15 propane.pdb
+   20 cubane.pdb
+   21 pentane.pdb
+   30 octane.pdb
+  122 all.pdb
+  163 ../creatures/basilisk.dat
+  163 ../creatures/minotaur.dat
+  163 ../creatures/original-basilisk.dat
+  163 ../creatures/original-minotaur.dat
+  163 ../creatures/original-unicorn.dat
+  163 ../creatures/unicorn.dat
+ 1222 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cd .
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd.[K ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ cd m[Knorth-pacific-gyre/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ nano s[Kdo-stats.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                        File: do-stats.sh                                                                                                                        [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[0m[32mfor[39m(B[m datafile [32min[39m[42m [49m(B[m (B[0;1m[33m"$@"[4d(B[0m[32mdo[5;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[31m$datafile[6;5H[39m(B[mbash goostats.sh (B[0;1m[31m$datafile[39m(B[m stats-(B[0;1m[31m$datafile[7d(B[0m[32mdone[49d[39m(B[m[K[7;5H[49d(B[0;7mFile Name to Write: do-stats.sh                                                                                                                                                                                  [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;32H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 5 lines ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[7;5H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ bash do-stats.sh NENE*A.txt NENE*B.txt
+NENE01729A.txt
+NENE01736A.txt
+NENE01751A.txt
+bash do-stats.sh NENE*A.txt NENE*B.txt | wc -lNENE01812A.txt
+
+NENE01843A.txt
+NENE01978A.txt
+^C
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ bash do-stats.sh NENE*A.txt NENE*B.txt
+NENE01729A.txt
+NENE01736A.txt
+^C
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ nano longst[K[Kest.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: longest.sh                                                                                                                        [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[mwc[42m [49m(B[m[4d[3;4H -l[42m [49m(B[m [32m$[39m(B[m(B[0;1m[31m$1[39m(B[m/*.[32m$[39m(B[m(B[0;1m[31m$1[39m(B[m(B[0;1m[31m21[39m(B[m [4d[3;14H[42m [49m(B[m [32m|[39m(B[m[42m [49m(B[m sor[49d[K[3;20Ht[42m [49m(B[m -[32m-n[39m(B[m[42m [49m(B[m [32m|[39m(B[m[42m [49m(B[m tail[42m [49m(B[m -[32m-n[39m(B[m[42m [49m(B[m 2[42m [49m(B[m [32m|[39m(B[mhe  [42m [49m(B[m ha ead[42m [49m(B[m -[32m-n[39m(B[m[42m [49m(B[m 1[49d(B[0;7mFile Name to Write: longest.sh                                                                                                                                                                                   [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;31H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3;48H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ nano longest.shbash do-stats.sh NENE*A.txt NENE*B.txt[23Pnano longest.shbash longest.sh shell-lesson-data/exercise-data/alkanes pdb[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbash longest.sh shell-lesson-data/exercise-data/alkanes pdb
+wc: shell-lesson-data/exercise-data/alkanes/*.pdb: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ cd
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cdbash longest.sh shell-lesson-data/exercise-data/alkanes pdb
+bash: longest.sh: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ cd[K[Kcd shell-lesson-data/not[Krth-pacific-gyre/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ ls
+do-stats.sh  NENE01729A.txt  NENE01751B.txt  NENE01971Z.txt  NENE02040A.txt  NENE02043B.txt        stats-NENE01751A.txt  stats-NENE01843B.txt  stats-NENE02040A.txt
+goodiff.sh   NENE01729B.txt  NENE01812A.txt  NENE01978A.txt  NENE02040B.txt  stats-NENE01729A.txt  stats-NENE01751B.txt  stats-NENE01978A.txt  stats-NENE02040B.txt
+goostats.sh  NENE01736A.txt  NENE01843A.txt  NENE01978B.txt  NENE02040Z.txt  stats-NENE01729B.txt  stats-NENE01812A.txt  stats-NENE01978B.txt  stats-NENE02043A.txt
+longest.sh   NENE01751A.txt  NENE01843B.txt  NENE02018B.txt  NENE02043A.txt  stats-NENE01736A.txt  stats-NENE01843A.txt  stats-NENE02018B.txt  stats-NENE02043B.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ lscd shell-lesson-data/north-pacific-gyre/bash longest.sh shell-lesson-data/exercise-data/alkanes pdb[C[C[C[C[C[1@D[1@D[1@D[1@D[1@D[1@D[1@D[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@.[1@.[C[1@/[1@.[1@.
+wc: ../../alkanes/*.pdb: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ bash longest.sh ../../alkanes pdb[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd shell-lesson-data/north-pacific-gyre/bash longest.sh shell-lesson-data/exercise-data/alkanes pdb
+wc: shell-lesson-data/exercise-data/alkanes/*.pdb: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ bash longest.sh shell-lesson-data/exercise-data/alkanes pdb[26P../..[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd shell-lesson-data/north-pacific-gyre/bash longest.sh shell-lesson-data/exercise-data/alkanes pdbcd[Kbash longest.sh shell-lesson-data/exercise-data/alkanes pdbnano longest.sh[K
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: longest.sh                                                                                                                        [3;1H(B[mwc -l (B[0;1m[31m$1[39m(B[m/*.(B[0;1m[31m$2[39m(B[m [32m|[39m(B[m sort [32m-n[39m(B[m [32m|[39m(B[m tail [32m-n[39m(B[m 2 [32m|[39m(B[m head [32m-n[39m(B[m 1[49;98H(B[0;7m[ Read 1 line ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ cd
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ ls [K[K[Kcd shell-lesson-data/cd [K[K[Kexercise-data/ale[Kke[Kanes/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ s[Knano sh[K[Kscript2.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: script2.sh                                                                                                                        [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[mfo[32mfor[39m(B[m[42m [49m(B[m f[32mfi[39m(B[mfile[42m [49m(B[m name   [42m [49m(B[m[K name[42m [49m(B[m i[32min[39m(B[m[42m [49d[49m(B[m[K[3;17H [32m$[39m(B[m(B[0;1m[31m$2[39m(B[m[42m [49m(B[m [32m$[39m(B[m(B[0;1m[31m$3[39m(B[m[42m [49m(B[m [32m$[39m(B[m(B[0;1m[31m$4[39m(B[m[4dd[32mdo[39m(B[m[5d[42m [49m(B[m ca [42m [49m(B[m[K ca(B[0;1m[34mcat[39m(B[m[42m [49m(B[m [32m$[39m(B[m(B[0;1m[31m$f[39m(B[m(B[0;1m[31mi[39m(B[m(B[0;1m[31ml[39m(B[m(B[0;1m[31me[39m(B[m(B[0;1m[31mn[39m(B[m(B[0;1m[31ma[39m(B[m(B[0;1m[31mm[39m(B[m(B[0;1m[31me[39m(B[m[6dd[32mdo[39m(B[mdon[32mdone[39m(B[m[49d(B[0;7mFile Name to Write: script2.sh                                                                                                                                                                                   [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;31H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 4 lines ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[6;5H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash script[K2. [Ksh [1@t[C[C[C[C[C*.pdb
+COMPND      PROPANE
+AUTHOR      DAVE WOODCOCK  95  12 18
+ATOM      1  C           1       1.241   0.444   0.349  1.00  0.00
+ATOM      2  C           1      -0.011  -0.441   0.333  1.00  0.00
+ATOM      3  C           1      -1.176   0.296  -0.332  1.00  0.00
+ATOM      4  H           1       1.516   0.699  -0.675  1.00  0.00
+ATOM      5  H           1       2.058  -0.099   0.827  1.00  0.00
+ATOM      6  H           1       1.035   1.354   0.913  1.00  0.00
+ATOM      7  H           1      -0.283  -0.691   1.359  1.00  0.00
+ATOM      8  H           1       0.204  -1.354  -0.225  1.00  0.00
+ATOM      9  H           1      -0.914   0.551  -1.359  1.00  0.00
+ATOM     10  H           1      -1.396   1.211   0.219  1.00  0.00
+ATOM     11  H           1      -2.058  -0.345  -0.332  1.00  0.00
+TER      12              1
+END
+COMPND      CUBANE
+AUTHOR      DAVE WOODCOCK  95 12 06
+ATOM      1  C           1       0.789  -0.852   0.504  1.00  0.00
+ATOM      2  C           1      -0.161  -1.104  -0.624  1.00  0.00
+ATOM      3  C           1      -1.262  -0.440   0.160  1.00  0.00
+ATOM      4  C           1      -0.289  -0.202   1.284  1.00  0.00
+ATOM      5  C           1       1.203   0.513  -0.094  1.00  0.00
+ATOM      6  C           1       0.099   1.184   0.694  1.00  0.00
+ATOM      7  C           1      -0.885   0.959  -0.460  1.00  0.00
+ATOM      8  C           1       0.236   0.283  -1.269  1.00  0.00
+ATOM      9  H           1       1.410  -1.631   0.942  1.00  0.00
+ATOM     10  H           1      -0.262  -2.112  -1.024  1.00  0.00
+ATOM     11  H           1      -2.224  -0.925   0.328  1.00  0.00
+ATOM     12  H           1      -0.468  -0.501   2.315  1.00  0.00
+ATOM     13  H           1       2.224   0.892  -0.134  1.00  0.00
+ATOM     14  H           1       0.240   2.112   1.251  1.00  0.00
+ATOM     15  H           1      -1.565   1.730  -0.831  1.00  0.00
+ATOM     16  H           1       0.472   0.494  -2.315  1.00  0.00
+TER      17              1
+END
+COMPND      ETHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1      -0.752   0.001  -0.141  1.00  0.00
+ATOM      2  C           1       0.752  -0.001   0.141  1.00  0.00
+ATOM      3  H           1      -1.158   0.991   0.070  1.00  0.00
+ATOM      4  H           1      -1.240  -0.737   0.496  1.00  0.00
+ATOM      5  H           1      -0.924  -0.249  -1.188  1.00  0.00
+ATOM      6  H           1       1.158  -0.991  -0.070  1.00  0.00
+ATOM      7  H           1       0.924   0.249   1.188  1.00  0.00
+ATOM      8  H           1       1.240   0.737  -0.496  1.00  0.00
+TER       9              1
+END
+COMPND      METHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1       0.257  -0.363   0.000  1.00  0.00
+ATOM      2  H           1       0.257   0.727   0.000  1.00  0.00
+ATOM      3  H           1       0.771  -0.727   0.890  1.00  0.00
+ATOM      4  H           1       0.771  -0.727  -0.890  1.00  0.00
+ATOM      5  H           1      -0.771  -0.727   0.000  1.00  0.00
+TER       6              1
+END
+COMPND      OCTANE
+AUTHOR      DAVE WOODCOCK  96 01 05
+ATOM      1  C           1      -4.397   0.370  -0.255  1.00  0.00
+ATOM      2  C           1      -3.113  -0.447  -0.421  1.00  0.00
+ATOM      3  C           1      -1.896   0.386  -0.007  1.00  0.00
+ATOM      4  C           1      -0.611  -0.426  -0.198  1.00  0.00
+ATOM      5  C           1       0.608   0.405   0.216  1.00  0.00
+ATOM      6  C           1       1.892  -0.400   0.001  1.00  0.00
+ATOM      7  C           1       3.113   0.429   0.414  1.00  0.00
+ATOM      8  C           1       4.397  -0.374   0.199  1.00  0.00
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+ATOM     14  H           1      -1.992   0.668   1.044  1.00  0.00
+ATOM     15  H           1      -1.849   1.286  -0.621  1.00  0.00
+ATOM     16  H           1      -0.515  -0.707  -1.248  1.00  0.00
+ATOM     17  H           1      -0.659  -1.326   0.417  1.00  0.00
+ATOM     18  H           1       0.520   0.671   1.270  1.00  0.00
+ATOM     19  H           1       0.645   1.314  -0.386  1.00  0.00
+ATOM     20  H           1       1.979  -0.666  -1.054  1.00  0.00
+ATOM     21  H           1       1.855  -1.309   0.604  1.00  0.00
+ATOM     22  H           1       3.030   0.696   1.467  1.00  0.00
+ATOM     23  H           1       3.155   1.337  -0.188  1.00  0.00
+ATOM     24  H           1       4.493  -0.641  -0.854  1.00  0.00
+ATOM     25  H           1       4.368  -1.282   0.801  1.00  0.00
+ATOM     26  H           1       5.254   0.230   0.498  1.00  0.00
+TER      27              1
+END
+COMPND      PENTANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1       2.484  -0.389   0.322  1.00  0.00
+ATOM      2  C           1       1.261   0.350  -0.243  1.00  0.00
+ATOM      3  C           1      -0.027  -0.348   0.199  1.00  0.00
+ATOM      4  C           1      -1.249   0.421  -0.326  1.00  0.00
+ATOM      5  C           1      -2.536  -0.311   0.047  1.00  0.00
+ATOM      6  H           1       2.471  -1.420  -0.033  1.00  0.00
+ATOM      7  H           1       2.443  -0.371   1.412  1.00  0.00
+ATOM      8  H           1       3.393   0.112  -0.016  1.00  0.00
+ATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+ATOM     14  H           1      -1.259   1.420   0.112  1.00  0.00
+ATOM     15  H           1      -2.608  -0.407   1.130  1.00  0.00
+ATOM     16  H           1      -2.540  -1.303  -0.404  1.00  0.00
+ATOM     17  H           1      -3.393   0.254  -0.321  1.00  0.00
+TER      18              1
+END
+COMPND      PROPANE
+AUTHOR      DAVE WOODCOCK  95  12 18
+ATOM      1  C           1       1.241   0.444   0.349  1.00  0.00
+ATOM      2  C           1      -0.011  -0.441   0.333  1.00  0.00
+ATOM      3  C           1      -1.176   0.296  -0.332  1.00  0.00
+ATOM      4  H           1       1.516   0.699  -0.675  1.00  0.00
+ATOM      5  H           1       2.058  -0.099   0.827  1.00  0.00
+ATOM      6  H           1       1.035   1.354   0.913  1.00  0.00
+ATOM      7  H           1      -0.283  -0.691   1.359  1.00  0.00
+ATOM      8  H           1       0.204  -1.354  -0.225  1.00  0.00
+ATOM      9  H           1      -0.914   0.551  -1.359  1.00  0.00
+ATOM     10  H           1      -1.396   1.211   0.219  1.00  0.00
+ATOM     11  H           1      -2.058  -0.345  -0.332  1.00  0.00
+TER      12              1
+END
+COMPND      CUBANE
+AUTHOR      DAVE WOODCOCK  95 12 06
+ATOM      1  C           1       0.789  -0.852   0.504  1.00  0.00
+ATOM      2  C           1      -0.161  -1.104  -0.624  1.00  0.00
+ATOM      3  C           1      -1.262  -0.440   0.160  1.00  0.00
+ATOM      4  C           1      -0.289  -0.202   1.284  1.00  0.00
+ATOM      5  C           1       1.203   0.513  -0.094  1.00  0.00
+ATOM      6  C           1       0.099   1.184   0.694  1.00  0.00
+ATOM      7  C           1      -0.885   0.959  -0.460  1.00  0.00
+ATOM      8  C           1       0.236   0.283  -1.269  1.00  0.00
+ATOM      9  H           1       1.410  -1.631   0.942  1.00  0.00
+ATOM     10  H           1      -0.262  -2.112  -1.024  1.00  0.00
+ATOM     11  H           1      -2.224  -0.925   0.328  1.00  0.00
+ATOM     12  H           1      -0.468  -0.501   2.315  1.00  0.00
+ATOM     13  H           1       2.224   0.892  -0.134  1.00  0.00
+ATOM     14  H           1       0.240   2.112   1.251  1.00  0.00
+ATOM     15  H           1      -1.565   1.730  -0.831  1.00  0.00
+ATOM     16  H           1       0.472   0.494  -2.315  1.00  0.00
+TER      17              1
+END
+COMPND      ETHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1      -0.752   0.001  -0.141  1.00  0.00
+ATOM      2  C           1       0.752  -0.001   0.141  1.00  0.00
+ATOM      3  H           1      -1.158   0.991   0.070  1.00  0.00
+ATOM      4  H           1      -1.240  -0.737   0.496  1.00  0.00
+ATOM      5  H           1      -0.924  -0.249  -1.188  1.00  0.00
+ATOM      6  H           1       1.158  -0.991  -0.070  1.00  0.00
+ATOM      7  H           1       0.924   0.249   1.188  1.00  0.00
+ATOM      8  H           1       1.240   0.737  -0.496  1.00  0.00
+TER       9              1
+END
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash script2.sh *.pdb
+COMPND      PROPANE
+AUTHOR      DAVE WOODCOCK  95  12 18
+ATOM      1  C           1       1.241   0.444   0.349  1.00  0.00
+ATOM      2  C           1      -0.011  -0.441   0.333  1.00  0.00
+ATOM      3  C           1      -1.176   0.296  -0.332  1.00  0.00
+ATOM      4  H           1       1.516   0.699  -0.675  1.00  0.00
+ATOM      5  H           1       2.058  -0.099   0.827  1.00  0.00
+ATOM      6  H           1       1.035   1.354   0.913  1.00  0.00
+ATOM      7  H           1      -0.283  -0.691   1.359  1.00  0.00
+ATOM      8  H           1       0.204  -1.354  -0.225  1.00  0.00
+ATOM      9  H           1      -0.914   0.551  -1.359  1.00  0.00
+ATOM     10  H           1      -1.396   1.211   0.219  1.00  0.00
+ATOM     11  H           1      -2.058  -0.345  -0.332  1.00  0.00
+TER      12              1
+END
+COMPND      CUBANE
+AUTHOR      DAVE WOODCOCK  95 12 06
+ATOM      1  C           1       0.789  -0.852   0.504  1.00  0.00
+ATOM      2  C           1      -0.161  -1.104  -0.624  1.00  0.00
+ATOM      3  C           1      -1.262  -0.440   0.160  1.00  0.00
+ATOM      4  C           1      -0.289  -0.202   1.284  1.00  0.00
+ATOM      5  C           1       1.203   0.513  -0.094  1.00  0.00
+ATOM      6  C           1       0.099   1.184   0.694  1.00  0.00
+ATOM      7  C           1      -0.885   0.959  -0.460  1.00  0.00
+ATOM      8  C           1       0.236   0.283  -1.269  1.00  0.00
+ATOM      9  H           1       1.410  -1.631   0.942  1.00  0.00
+ATOM     10  H           1      -0.262  -2.112  -1.024  1.00  0.00
+ATOM     11  H           1      -2.224  -0.925   0.328  1.00  0.00
+ATOM     12  H           1      -0.468  -0.501   2.315  1.00  0.00
+ATOM     13  H           1       2.224   0.892  -0.134  1.00  0.00
+ATOM     14  H           1       0.240   2.112   1.251  1.00  0.00
+ATOM     15  H           1      -1.565   1.730  -0.831  1.00  0.00
+ATOM     16  H           1       0.472   0.494  -2.315  1.00  0.00
+TER      17              1
+END
+COMPND      ETHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1      -0.752   0.001  -0.141  1.00  0.00
+ATOM      2  C           1       0.752  -0.001   0.141  1.00  0.00
+ATOM      3  H           1      -1.158   0.991   0.070  1.00  0.00
+ATOM      4  H           1      -1.240  -0.737   0.496  1.00  0.00
+ATOM      5  H           1      -0.924  -0.249  -1.188  1.00  0.00
+ATOM      6  H           1       1.158  -0.991  -0.070  1.00  0.00
+ATOM      7  H           1       0.924   0.249   1.188  1.00  0.00
+ATOM      8  H           1       1.240   0.737  -0.496  1.00  0.00
+TER       9              1
+END
+COMPND      METHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1       0.257  -0.363   0.000  1.00  0.00
+ATOM      2  H           1       0.257   0.727   0.000  1.00  0.00
+ATOM      3  H           1       0.771  -0.727   0.890  1.00  0.00
+ATOM      4  H           1       0.771  -0.727  -0.890  1.00  0.00
+ATOM      5  H           1      -0.771  -0.727   0.000  1.00  0.00
+TER       6              1
+END
+COMPND      OCTANE
+AUTHOR      DAVE WOODCOCK  96 01 05
+ATOM      1  C           1      -4.397   0.370  -0.255  1.00  0.00
+ATOM      2  C           1      -3.113  -0.447  -0.421  1.00  0.00
+ATOM      3  C           1      -1.896   0.386  -0.007  1.00  0.00
+ATOM      4  C           1      -0.611  -0.426  -0.198  1.00  0.00
+ATOM      5  C           1       0.608   0.405   0.216  1.00  0.00
+ATOM      6  C           1       1.892  -0.400   0.001  1.00  0.00
+ATOM      7  C           1       3.113   0.429   0.414  1.00  0.00
+ATOM      8  C           1       4.397  -0.374   0.199  1.00  0.00
+ATOM      9  H           1      -4.502   0.681   0.785  1.00  0.00
+ATOM     10  H           1      -5.254  -0.243  -0.537  1.00  0.00
+ATOM     11  H           1      -4.357   1.252  -0.895  1.00  0.00
+ATOM     12  H           1      -3.009  -0.741  -1.467  1.00  0.00
+ATOM     13  H           1      -3.172  -1.337   0.206  1.00  0.00
+ATOM     14  H           1      -1.992   0.668   1.044  1.00  0.00
+ATOM     15  H           1      -1.849   1.286  -0.621  1.00  0.00
+ATOM     16  H           1      -0.515  -0.707  -1.248  1.00  0.00
+ATOM     17  H           1      -0.659  -1.326   0.417  1.00  0.00
+ATOM     18  H           1       0.520   0.671   1.270  1.00  0.00
+ATOM     19  H           1       0.645   1.314  -0.386  1.00  0.00
+ATOM     20  H           1       1.979  -0.666  -1.054  1.00  0.00
+ATOM     21  H           1       1.855  -1.309   0.604  1.00  0.00
+ATOM     22  H           1       3.030   0.696   1.467  1.00  0.00
+ATOM     23  H           1       3.155   1.337  -0.188  1.00  0.00
+ATOM     24  H           1       4.493  -0.641  -0.854  1.00  0.00
+ATOM     25  H           1       4.368  -1.282   0.801  1.00  0.00
+ATOM     26  H           1       5.254   0.230   0.498  1.00  0.00
+TER      27              1
+END
+COMPND      PENTANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1       2.484  -0.389   0.322  1.00  0.00
+ATOM      2  C           1       1.261   0.350  -0.243  1.00  0.00
+ATOM      3  C           1      -0.027  -0.348   0.199  1.00  0.00
+ATOM      4  C           1      -1.249   0.421  -0.326  1.00  0.00
+ATOM      5  C           1      -2.536  -0.311   0.047  1.00  0.00
+ATOM      6  H           1       2.471  -1.420  -0.033  1.00  0.00
+ATOM      7  H           1       2.443  -0.371   1.412  1.00  0.00
+ATOM      8  H           1       3.393   0.112  -0.016  1.00  0.00
+ATOM      9  H           1       1.324   0.350  -1.332  1.00  0.00
+ATOM     10  H           1       1.271   1.378   0.122  1.00  0.00
+ATOM     11  H           1      -0.074  -0.384   1.288  1.00  0.00
+ATOM     12  H           1      -0.048  -1.362  -0.205  1.00  0.00
+ATOM     13  H           1      -1.183   0.500  -1.412  1.00  0.00
+ATOM     14  H           1      -1.259   1.420   0.112  1.00  0.00
+ATOM     15  H           1      -2.608  -0.407   1.130  1.00  0.00
+ATOM     16  H           1      -2.540  -1.303  -0.404  1.00  0.00
+ATOM     17  H           1      -3.393   0.254  -0.321  1.00  0.00
+TER      18              1
+END
+COMPND      PROPANE
+AUTHOR      DAVE WOODCOCK  95  12 18
+ATOM      1  C           1       1.241   0.444   0.349  1.00  0.00
+ATOM      2  C           1      -0.011  -0.441   0.333  1.00  0.00
+ATOM      3  C           1      -1.176   0.296  -0.332  1.00  0.00
+ATOM      4  H           1       1.516   0.699  -0.675  1.00  0.00
+ATOM      5  H           1       2.058  -0.099   0.827  1.00  0.00
+ATOM      6  H           1       1.035   1.354   0.913  1.00  0.00
+ATOM      7  H           1      -0.283  -0.691   1.359  1.00  0.00
+ATOM      8  H           1       0.204  -1.354  -0.225  1.00  0.00
+ATOM      9  H           1      -0.914   0.551  -1.359  1.00  0.00
+ATOM     10  H           1      -1.396   1.211   0.219  1.00  0.00
+ATOM     11  H           1      -2.058  -0.345  -0.332  1.00  0.00
+TER      12              1
+END
+COMPND      CUBANE
+AUTHOR      DAVE WOODCOCK  95 12 06
+ATOM      1  C           1       0.789  -0.852   0.504  1.00  0.00
+ATOM      2  C           1      -0.161  -1.104  -0.624  1.00  0.00
+ATOM      3  C           1      -1.262  -0.440   0.160  1.00  0.00
+ATOM      4  C           1      -0.289  -0.202   1.284  1.00  0.00
+ATOM      5  C           1       1.203   0.513  -0.094  1.00  0.00
+ATOM      6  C           1       0.099   1.184   0.694  1.00  0.00
+ATOM      7  C           1      -0.885   0.959  -0.460  1.00  0.00
+ATOM      8  C           1       0.236   0.283  -1.269  1.00  0.00
+ATOM      9  H           1       1.410  -1.631   0.942  1.00  0.00
+ATOM     10  H           1      -0.262  -2.112  -1.024  1.00  0.00
+ATOM     11  H           1      -2.224  -0.925   0.328  1.00  0.00
+ATOM     12  H           1      -0.468  -0.501   2.315  1.00  0.00
+ATOM     13  H           1       2.224   0.892  -0.134  1.00  0.00
+ATOM     14  H           1       0.240   2.112   1.251  1.00  0.00
+ATOM     15  H           1      -1.565   1.730  -0.831  1.00  0.00
+ATOM     16  H           1       0.472   0.494  -2.315  1.00  0.00
+TER      17              1
+END
+COMPND      ETHANE
+AUTHOR      DAVE WOODCOCK  95 12 18
+ATOM      1  C           1      -0.752   0.001  -0.141  1.00  0.00
+ATOM      2  C           1       0.752  -0.001   0.141  1.00  0.00
+ATOM      3  H           1      -1.158   0.991   0.070  1.00  0.00
+ATOM      4  H           1      -1.240  -0.737   0.496  1.00  0.00
+ATOM      5  H           1      -0.924  -0.249  -1.188  1.00  0.00
+ATOM      6  H           1       1.158  -0.991  -0.070  1.00  0.00
+ATOM      7  H           1       0.924   0.249   1.188  1.00  0.00
+ATOM      8  H           1       1.240   0.737  -0.496  1.00  0.00
+TER       9              1
+END
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ bash script2.sh *.pdb[6Pnano script2.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                         File: script2.sh                                                                                                                        [3;1H(B[0m[32mfor[39m(B[m filename [32min[39m(B[m (B[0;1m[31m$2[39m(B[m (B[0;1m[31m$3[39m(B[m (B[0;1m[31m$4[4d(B[0m[32mdo[5d(B[0;1m[34mcat[39m(B[m (B[0;1m[31m$filename[6d(B[0m[32mdone[49;97H[39m(B[0;7m[ Read 4 lines ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/alkanesvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/alkanes$ cd 
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ c [Kd shell-lesson-data/north-pacific-gyre/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ nano do-errors.sh
+[?1049h[1;51r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6                                                        File: do-errors.sh                                                                                                                       [49;99H[ New File ][50d^G(B[m Get Help[50;35H(B[0;7m^O(B[m WriteOut[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;171H(B[0;7m^C(B[m Cur Pos[51d(B[0;7m^X(B[m Exit[51;35H(B[0;7m^J(B[m Justify[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page[51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[3d[1;200H(B[0;7mModified[3d(B[0m[36m# Calculate st[39m(B[m[36mats for data files.[4d[32mfor[39m(B[m datafile [32min[39m(B[m (B[0;1m[33m"$@"[5d(B[0m[32mdo[6;5H(B[0;1m[34mecho[39m(B[m (B[0;1m[31m$datfile[7;5H[39m(B[mbash goostats.sh (B[0;1m[31m$datafile[39m(B[m stats-(B[0;1m[31m$datafile[8d(B[0m[32mdone[49d[39m(B[m[K[8;5H[49d(B[0;7mFile Name to Write: do-errors.sh                                                                                                                                                                                 [50;35H(B[m           [53G(B[0;7mM-D(B[m DOS Format[14X[50;103H  (B[0;7mM-A(B[m Append[50;137H           [50;157H(B[0;7mM-B(B[m Backup File[K[51;2H(B[0;7mC(B[m Cancel[51;35H          [51;53H(B[0;7mM-M(B[m Mac Format             [51;103H  (B[0;7mM-P(B[m Prepend[K[49;33H[1;200H[39;49m(B[0;7m        [49;96H(B[m[1K (B[0;7m[ Wrote 6 lines ](B[m[K[50;35H(B[0;7m^O(B[m WriteOut[53G[16X[50;69H(B[0;7m^R(B[m Read File[50;103H(B[0;7m^Y(B[m Prev Page[50;137H(B[0;7m^K(B[m Cut Text[50;157H[14X[50;171H(B[0;7m^C(B[m Cur Pos[51;2H(B[0;7mX(B[m Exit  [51;35H(B[0;7m^J(B[m Justify[51;53H[16X[51;69H(B[0;7m^W(B[m Where Is[51;103H(B[0;7m^V(B[m Next Page [51;137H(B[0;7m^U(B[m UnCut Text[51;171H(B[0;7m^T(B[m To Spell[8;5H[50d[J[51;209H[51;1H[?1049l[?1l>]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ bash -x do-errors.sh NENE*A.txt NENE*B.txt
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01729A.txt stats-NENE01729A.txt
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01736A.txt stats-NENE01736A.txt
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01751A.txt stats-NENE01751A.txt
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01812A.txt stats-NENE01812A.txt
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01843A.txt stats-NENE01843A.txt
+^X+ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE01978A.txt stats-NENE01978A.txt
+
+^X^X
+
+
++ for datafile in '"$@"'
++ echo
+
++ bash goostats.sh NENE02040A.txt stats-NENE02040A.txt
+
+^C
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ echo ""f"i"n"d"i"n"g" "t"h"i"n"g"s"
+finding things
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/north-pacific-gyrevagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/north-pacific-gyre$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data$ ce [K[Kd exercise-data/writing/
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ cat haiku.dat
+cat: haiku.dat: No such file or directory
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ cat haiku.dat[K[K[Ktxt
+The Tao that is seen
+Is not the true Tao, until
+You bring fresh toner.
+
+With searching comes loss
+and the presence of absence:
+"My Thesis" not found.
+
+Yesterday it worked
+Today it is not working
+Software is like that.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep searching haiku.txt
+With [01;31m[Ksearching[m[K comes loss
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep searching haiku.txt[1@C[1@C[C[C[1@C[C[C[C[C[C[C[C[C[C[C[C[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt[1Phaiku.txt[C haiku.txtT haiku.txth haiku.txte haiku.txt
+[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" not found.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep The haiku.txt[1@-[1@w[1@ 
+[01;31m[KThe[m[K Tao that is seen
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -w The haiku.txt[1P haiku.txt[1P haiku.txt[1P haiku.txt" haiku.txt" haiku.txt[1@n[1@o[1@t[1@ [1@f[1@o[1@u[1@n[1@d
+"My Thesis" [01;31m[Knot found[m[K.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -n ""n"o"t" "f"o"u"n"d"[C a[Khaiku.txt
+[32m[K7[m[K[36m[K:[m[K"My Thesis" [01;31m[Knot found[m[K.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -n "not found" haiku.txt[1@-[1@w[1@ 
+[32m[K7[m[K[36m[K:[m[K"My Thesis" [01;31m[Knot found[m[K.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -n -w "not found" haiku.txt[1@-[1@i[1@ [C[1@C[1@C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@t[1@h[1@e
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -n -w -i "the" haiku.txt[1@-[1@v[1@ 
+[32m[K3[m[K[36m[K:[m[KYou bring fresh toner.
+[32m[K4[m[K[36m[K:[m[K
+[32m[K5[m[K[36m[K:[m[KWith searching comes loss
+[32m[K7[m[K[36m[K:[m[K"My Thesis" not found.
+[32m[K8[m[K[36m[K:[m[K
+[32m[K9[m[K[36m[K:[m[KYesterday it worked
+[32m[K10[m[K[36m[K:[m[KToday it is not working
+[32m[K11[m[K[36m[K:[m[KSoftware is like that.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -r Ys[Kesterday.
+[35m[Khaiku.txt[m[K[36m[K:[m[K[01;31m[KYesterday [m[Kit worked
+[35m[KLittleWomen.txt[m[K[36m[K:[m[K"[01;31m[KYesterday,[m[K when Aunt was asleep and I was trying to be as still as a
+[35m[KLittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday [m[Kat dinner, when an Austrian officer stared at us and then
+[35m[KLittleWomen.txt[m[K[36m[K:[m[K[01;31m[KYesterday [m[Kwas a quiet day spent in teaching, sewing, and writing in my
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ grep -E ""^"."o"[C haiku.txt
+[01;31m[KYo[m[Ku bring fresh toner.
+[01;31m[KTo[m[Kday it is not working
+[01;31m[KSo[m[Kftware is like that.
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ ls
+haiku.txt  LittleWomen.txt  [0m[01;34mthesis_backup[0m
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ echo ""l"i"t"t"l"e"w"o"m"e"n"
+littlewomen
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ fr[Kr[Kor name in Jo, Meg, Beth, and Amy[1P Amy[1P Amy[1P Amy[1PAmy[1P Amy[C Amy[C[C[1PAmy[1PAmy Amy[1P[1P[1@ [1P[1P[1@ [C[C[C[C[C[C[C[C[C[C[C[C
+> do
+> echo grep -w [K[Koc [K[Kw #name [K [K[K[K[K[K[K$name litt[K[K[K[K[K LittleWomen.txt | wc- [1@ [C[C [Kl
+> dn[Kone
+      1       4      28 -
+wc: l: No such file or directory
+      1       4      28 total
+      1       4      29 -
+wc: l: No such file or directory
+      1       4      29 total
+      1       4      30 -
+wc: l: No such file or directory
+      1       4      30 total
+      1       4      29 -
+wc: l: No such file or directory
+      1       4      29 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ for name in Jo Meg Beth Amy; do echo grep -ow $name LittleWomen.txt | wc - l; done[C[C[C[C[C[C[1@ [1@$[1@n[1@a[1@m[1@e[1@;
+Jo
+   1355    1355    4065 -
+wc: l: No such file or directory
+   1355    1355    4065 total
+Meg
+    683     683    2732 -
+wc: l: No such file or directory
+    683     683    2732 total
+Beth
+    459     459    2295 -
+wc: l: No such file or directory
+    459     459    2295 total
+Amy
+    645     645    2580 -
+wc: l: No such file or directory
+    645     645    2580 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-data/writingvagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data/writing$ cd ..
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cho[K[K[Kecho ""f"i"n"d" "p"r"a"t"[1P"c"t"i"v"e"
+find practive
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ echo "find practive"[1Pe"ce"[Ce"[C[1P"
+find practice
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ find .
+.
+./alkanes
+./alkanes/length.txt
+./alkanes/ethane.pdb
+./alkanes/propane.pdb
+./alkanes/sorted_length.txt
+./alkanes/sorted.sh
+./alkanes/pentane.pdb
+./alkanes/cubane.pdb
+./alkanes/middle.sh
+./alkanes/all.pdb
+./alkanes/alkanes.pdb
+./alkanes/script2.sh
+./alkanes/octane.pdb
+./alkanes/methane.pdb
+./creatures
+./creatures/original-basilisk.dat
+./creatures/basilisk.dat
+./creatures/original-unicorn.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./creatures/original-minotaur.dat
+./animal-counts
+./animal-counts/animals.csv
+./animal-counts/final.txt
+./project
+./project/data
+./project/results
+./numbers.txt
+./writing
+./writing/haiku.txt
+./writing/thesis_backup
+./writing/thesis_backup/quotations.txt
+./writing/LittleWomen.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ fubd[K[K[Kind . -type d
+.
+./alkanes
+./creatures
+./animal-counts
+./project
+./project/data
+./project/results
+./writing
+./writing/thesis_backup
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ find . -type d[Kf
+./alkanes/length.txt
+./alkanes/ethane.pdb
+./alkanes/propane.pdb
+./alkanes/sorted_length.txt
+./alkanes/sorted.sh
+./alkanes/pentane.pdb
+./alkanes/cubane.pdb
+./alkanes/middle.sh
+./alkanes/all.pdb
+./alkanes/alkanes.pdb
+./alkanes/script2.sh
+./alkanes/octane.pdb
+./alkanes/methane.pdb
+./creatures/original-basilisk.dat
+./creatures/basilisk.dat
+./creatures/original-unicorn.dat
+./creatures/minotaur.dat
+./creatures/unicorn.dat
+./creatures/original-minotaur.dat
+./animal-counts/animals.csv
+./animal-counts/final.txt
+./numbers.txt
+./writing/haiku.txt
+./writing/thesis_backup/quotations.txt
+./writing/LittleWomen.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ fine [K[Kd . -name [K[Ke *.txt
+./numbers.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ fine [K[K[K[K[Kfind . -name [K ""*"."t"x"t"
+./alkanes/length.txt
+./alkanes/sorted_length.txt
+./animal-counts/final.txt
+./numbers.txt
+./writing/haiku.txt
+./writing/thesis_backup/quotations.txt
+./writing/LittleWomen.txt
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ we[Kc [K -l $()f)i)n)d) ).) )-)n)a)m)e) )")")*").")t")x")t")[C[C
+      7 ./alkanes/length.txt
+      7 ./alkanes/sorted_length.txt
+      3 ./animal-counts/final.txt
+      5 ./numbers.txt
+     11 ./writing/haiku.txt
+      1 ./writing/thesis_backup/quotations.txt
+  21022 ./writing/LittleWomen.txt
+  21056 total
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ grep ""s"e"a"r"c"h"i"n"g"[C #[K$(find [K . -name [C""*"."t"x"t"[C)
+[35m[K./writing/haiku.txt[m[K[36m[K:[m[KWith [01;31m[Ksearching[m[K comes loss
+[35m[K./writing/LittleWomen.txt[m[K[36m[K:[m[Ksitting on the top step, affected to be [01;31m[Ksearching[m[K for her book, but was
+]0;vagrant@vagrant-ubuntu-trusty-64: ~/shell-lesson-data/exercise-datavagrant@vagrant-ubuntu-trusty-64:~/shell-lesson-data/exercise-data$ cd
+]0;vagrant@vagrant-ubuntu-trusty-64: ~vagrant@vagrant-ubuntu-trusty-64:~$ exit
+exit
+
+Script done on Wed 05 Jul 2023 08:48:53 AM UTC
